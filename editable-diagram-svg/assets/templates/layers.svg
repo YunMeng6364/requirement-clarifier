@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="1660" viewBox="0 0 1672 1660" role="img" aria-labelledby="diagram-title diagram-description" id="diagram-main" fill="#26406e" stroke="none" color="#26406e" data-topology="nested" data-detail-level="medium">
+<title id="diagram-title">系统分层模板 · 按职责组织模块</title><desc id="diagram-description">虚构演示；按职责分层，不表示请求或执行的先后顺序。</desc>
+<defs><style>text{font-family:"Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "Source Han Sans SC", Arial, sans-serif}</style><linearGradient id="background" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f9ff" /><stop offset="1" stop-color="#e9f2ff" /></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="145%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#2864dc" flood-opacity="0.12" /></filter><linearGradient id="gradient-blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b8bff" /><stop offset="1" stop-color="#1b57e0" /></linearGradient><marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L10,6 L1,11 Z" fill="#2468ee" /></marker><linearGradient id="gradient-teal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#17b9a5" /><stop offset="1" stop-color="#0b8f86" /></linearGradient><marker id="arrow-teal" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L10,6 L1,11 Z" fill="#0b8f86" /></marker><linearGradient id="gradient-orange" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb324" /><stop offset="1" stop-color="#f08a00" /></linearGradient><marker id="arrow-orange" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L10,6 L1,11 Z" fill="#a2620a" /></marker><linearGradient id="gradient-purple" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#727bff" /><stop offset="1" stop-color="#5149e8" /></linearGradient><marker id="arrow-purple" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L10,6 L1,11 Z" fill="#5149e8" /></marker><linearGradient id="gradient-infra" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8eef8" /><stop offset="1" stop-color="#cfd9ea" /></linearGradient><marker id="arrow-infra" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L10,6 L1,11 Z" fill="#46618f" /></marker><symbol id="icon-web" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2.5" y="3" width="19" height="14" rx="2.5" fill="currentColor" fill-opacity=".12" />
+        <path d="M2.5 7.5h19M12 17v4M8 21h8" />
+        <circle cx="5.5" cy="5.3" r=".7" fill="currentColor" stroke="none" /><circle cx="8" cy="5.3" r=".7" fill="currentColor" stroke="none" />
+        <path d="m8 11 2 2-2 2m5 0h3" />
+      </g>
+    </symbol>
+    <symbol id="icon-terminal" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2.5" y="4" width="19" height="16" rx="3" fill="currentColor" fill-opacity=".12" />
+        <path d="m6 9 3 3-3 3m6 1h5" />
+      </g>
+    </symbol>
+    <symbol id="icon-robot" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="4.5" y="7" width="15" height="13" rx="4" fill="currentColor" fill-opacity=".16" />
+        <path d="M12 4v3M2 11v5m20-5v5" />
+        <circle cx="12" cy="2.8" r="1.1" fill="currentColor" />
+        <circle cx="8.5" cy="12" r="1.1" fill="currentColor" stroke="none" />
+        <circle cx="15.5" cy="12" r="1.1" fill="currentColor" stroke="none" />
+        <path d="M9 16q3 2 6 0" />
+      </g>
+    </symbol>
+    <symbol id="icon-team" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="7" r="3" fill="currentColor" fill-opacity=".16" />
+        <path d="M6 20v-2a6 6 0 0 1 12 0v2Z" fill="currentColor" fill-opacity=".12" />
+        <path d="M4 5.5a2.5 2.5 0 0 1 0 5m-2 8v-2a4 4 0 0 1 3-4m15-7a2.5 2.5 0 0 0 0 5m2 8v-2a4 4 0 0 0-3-4" />
+      </g>
+    </symbol>
+    <symbol id="icon-puzzle" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 9V4h5a3 3 0 1 1 6 0h5v5a3 3 0 1 0 0 6v5h-5a3 3 0 1 0-6 0H4v-5a3 3 0 1 0 0-6Z" fill="currentColor" fill-opacity=".14" />
+      </g>
+    </symbol>
+    <symbol id="icon-package" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m12 2 9 5v10l-9 5-9-5V7Z" fill="currentColor" fill-opacity=".12" />
+        <path d="m3 7 9 5 9-5M12 12v10M7.5 4.5l9 5V14" />
+      </g>
+    </symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m12 2 8.5 3.5V12c0 4.5-3.5 7.5-8.5 10-5-2.5-8.5-5.5-8.5-10V5.5Z" fill="currentColor" fill-opacity=".14" />
+        <path d="m7.5 11.5 3 3 6-6" />
+      </g>
+    </symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="10" cy="10" r="7" fill="currentColor" fill-opacity=".12" />
+        <path d="m15 15 6 6M7 7q3-2 5 0" />
+      </g>
+    </symbol>
+    <symbol id="icon-database" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 6v12c0 5.3 18 5.3 18 0V6" fill="currentColor" fill-opacity=".12" />
+        <ellipse cx="12" cy="6" rx="9" ry="4" />
+        <path d="M3 12c0 5.3 18 5.3 18 0M3 18c0 5.3 18 5.3 18 0" />
+      </g>
+    </symbol>
+    <symbol id="icon-cloud" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 19a4.5 4.5 0 0 1-1-8.9A7 7 0 0 1 18.4 9a5 5 0 0 1-.4 10Z" fill="currentColor" fill-opacity=".14" />
+        <path d="M12 19v-7m-3 3 3-3 3 3" />
+      </g>
+    </symbol>
+    <symbol id="icon-queue" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="18" height="18" rx="3" fill="currentColor" fill-opacity=".12" />
+        <circle cx="6.7" cy="7" r=".8" fill="currentColor" stroke="none" />
+        <circle cx="6.7" cy="12" r=".8" fill="currentColor" stroke="none" />
+        <circle cx="6.7" cy="17" r=".8" fill="currentColor" stroke="none" />
+        <path d="M10 7h7m-7 5h7m-7 5h4m3 0 2 2-2 2" />
+      </g>
+    </symbol>
+    <symbol id="icon-layers" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m12 2 10 5-10 5L2 7Z" fill="currentColor" fill-opacity=".14" />
+        <path d="m2 12 10 5 10-5M2 17l10 5 10-5" />
+      </g>
+    </symbol>
+    <symbol id="icon-document" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 2h9l5 5v15H5Z" fill="currentColor" fill-opacity=".12" />
+        <path d="M14 2v5h5M8 11h8m-8 4h8m-8 4h5" />
+      </g>
+    </symbol>
+    <symbol id="icon-edit" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m4 16 12-12a2.8 2.8 0 0 1 4 4L8 20l-5 1Z" fill="currentColor" fill-opacity=".14" />
+        <path d="m14 6 4 4M4 16l4 4m4 1h9" />
+      </g>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9.5" fill="currentColor" fill-opacity=".14" />
+        <path d="m7 12 3.5 3.5L17 9" />
+      </g>
+    </symbol>
+    <symbol id="icon-bell" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 10a7 7 0 0 1 14 0v5l2 3H3l2-3Z" fill="currentColor" fill-opacity=".14" />
+        <path d="M9 21q3 2 6 0M12 1v2" />
+      </g>
+    </symbol>
+    <symbol id="icon-sensor" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="8" y="10" width="8" height="11" rx="2" fill="currentColor" fill-opacity=".14" />
+        <circle cx="12" cy="15" r="1.5" fill="currentColor" fill-opacity=".28" />
+        <path d="M9 7q3-3 6 0M6 4q6-6 12 0" />
+      </g>
+    </symbol>
+  </defs>
+<rect width="1672" height="1660" fill="url(#background)" id="element-001" />
+<text x="60" y="78" font-size="46" fill="#12306b" font-weight="700" text-anchor="start" id="text-001" data-content-id="text-001" data-region="region-text-001" data-bounds="54.0,14.199999999999996,1618.0,104.0"><tspan x="60" y="78.0">系统分层模板 · 按职责组织模块</tspan></text>
+<text x="60" y="122" font-size="24" fill="#46618f" font-weight="400" text-anchor="start" id="text-002" data-content-id="text-002" data-region="region-text-002" data-bounds="54.0,86.8,1618.0,60.0"><tspan x="60" y="122.0">布局模板 · 示例标签可替换，区域随内容扩展</tspan></text>
+<rect x="60" y="160" width="1552" height="104" rx="32" fill="#ffffff" fill-opacity="1" stroke="#cfe0fb" stroke-width="1.5" filter="url(#shadow)" id="element-002" />
+<rect x="80" y="178" width="210" height="68" rx="18" fill="url(#gradient-blue)" fill-opacity="1" stroke="none" stroke-width="1.5" id="element-003" />
+<text x="185" y="222" font-size="28" fill="#ffffff" font-weight="700" text-anchor="middle" id="text-003" data-content-id="text-003" data-region="region-text-003" data-bounds="0,181.6,1672.0,68.0"><tspan x="185" y="222.0">使用入口</tspan></text>
+<use href="#icon-web" x="322.0" y="191" width="40" height="40" color="#2468ee" id="element-004" />
+<text x="376.0" y="222" font-size="26" fill="#1c2b4a" font-weight="700" text-anchor="start" id="text-004" data-content-id="text-004" data-region="region-text-004" data-bounds="370.0,184.2,1302.0,64.0"><tspan x="376.0" y="222.0">网页端</tspan></text>
+<use href="#icon-terminal" x="744.0" y="191" width="40" height="40" color="#2468ee" id="element-005" />
+<text x="798.0" y="222" font-size="26" fill="#1c2b4a" font-weight="700" text-anchor="start" id="text-005" data-content-id="text-005" data-region="region-text-005" data-bounds="792.0,184.2,880.0,64.0"><tspan x="798.0" y="222.0">终端端</tspan></text>
+<use href="#icon-robot" x="1166.0" y="191" width="40" height="40" color="#2468ee" id="element-006" />
+<text x="1220.0" y="222" font-size="26" fill="#1c2b4a" font-weight="700" text-anchor="start" id="text-006" data-content-id="text-006" data-region="region-text-006" data-bounds="1214.0,184.2,458.0,64.0"><tspan x="1220.0" y="222.0">助手端</tspan></text>
+<rect x="60" y="308" width="1552" height="176" rx="28" fill="#ffffff" fill-opacity="1" stroke="#8db8ff" stroke-width="1.5" filter="url(#shadow)" id="element-007" />
+<defs><clipPath id="band-clip-1"><rect x="60" y="308" width="1552" height="176" rx="28" /></clipPath></defs>
+<g clip-path="url(#band-clip-1)"><rect x="60" y="308" width="1552" height="80" fill="url(#gradient-blue)" id="element-008" />
+<rect x="60" y="308" width="1552" height="80" fill="#12306b" fill-opacity="0.16" id="element-009" />
+</g>
+<use href="#icon-shield" x="88" y="331" width="36" height="36" color="#ffffff" id="element-010" />
+<text x="140" y="359" font-size="30" fill="#ffffff" font-weight="700" text-anchor="start" id="text-007" data-content-id="text-007" data-region="region-text-007" data-bounds="134.0,316.0,1538.0,72.0"><tspan x="140" y="359.0">02  接入与身份校验</tspan></text>
+<text x="92" y="442" font-size="26" fill="#1c2b4a" font-weight="400" text-anchor="start" id="text-008" data-content-id="text-008" data-region="region-text-008" data-bounds="86.0,404.2,1586.0,64.0"><tspan x="92" y="442.0">验证访问主体 · 明确统一接入边界</tspan></text>
+<rect x="60" y="528" width="1552" height="278" rx="28" fill="#ffffff" fill-opacity="1" stroke="#8fe0d5" stroke-width="1.5" filter="url(#shadow)" id="element-011" />
+<defs><clipPath id="band-clip-2"><rect x="60" y="528" width="1552" height="278" rx="28" /></clipPath></defs>
+<g clip-path="url(#band-clip-2)"><rect x="60" y="528" width="1552" height="80" fill="url(#gradient-teal)" id="element-012" />
+<rect x="60" y="528" width="1552" height="80" fill="#12306b" fill-opacity="0.16" id="element-013" />
+</g>
+<use href="#icon-puzzle" x="88" y="551" width="36" height="36" color="#ffffff" id="element-014" />
+<text x="140" y="579" font-size="30" fill="#ffffff" font-weight="700" text-anchor="start" id="text-009" data-content-id="text-009" data-region="region-text-009" data-bounds="134.0,536.0,1538.0,72.0"><tspan x="140" y="579.0">03  业务应用层</tspan></text>
+<g id="group-001" data-group-id="group-001"><g id="node-001" data-group-id="group-001"><rect x="84" y="632" width="358" height="146" rx="20" fill="#ffffff" fill-opacity="1" stroke="#8fe0d5" stroke-width="1.5" filter="url(#shadow)" data-paint-role="card" id="element-015" />
+<g data-region="node-001" data-bounds="106,650,314,110">
+<use href="#icon-sensor" x="108" y="655" width="32" height="32" color="#0b8f86" data-paint-role="accent" id="element-016" />
+<text x="152" y="681" font-size="26" fill="#1c2b4a" font-weight="700" text-anchor="start" data-paint-role="foreground" id="text-010" data-content-id="text-010"><tspan x="152" y="681.0">业务模块 A</tspan></text>
+<text x="108" y="728.8" font-size="24" fill="#1c2b4a" font-weight="400" text-anchor="start" id="text-011" data-content-id="text-011"><tspan x="108" y="728.8">替换为已确认职责</tspan></text>
+</g>
+</g><g id="node-002" data-group-id="group-001"><rect x="466" y="632" width="358" height="146" rx="20" fill="#ffffff" fill-opacity="1" stroke="#8fe0d5" stroke-width="1.5" filter="url(#shadow)" data-paint-role="card" id="element-017" />
+<g data-region="node-002" data-bounds="488,650,314,110">
+<use href="#icon-queue" x="490" y="655" width="32" height="32" color="#0b8f86" data-paint-role="accent" id="element-018" />
+<text x="534" y="681" font-size="26" fill="#1c2b4a" font-weight="700" text-anchor="start" data-paint-role="foreground" id="text-012" data-content-id="text-012"><tspan x="534" y="681.0">业务模块 B</tspan></text>
+<text x="490" y="728.8" font-size="24" fill="#1c2b4a" font-weight="400" text-anchor="start" id="text-013" data-content-id="text-013"><tspan x="490" y="728.8">替换为已确认职责</tspan></text>
+</g>
+</g><g id="node-003" data-group-id="group-001"><rect x="848" y="632" width="358" height="146" rx="20" fill="#ffffff" fill-opacity="1" stroke="#8fe0d5" stroke-width="1.5" filter="url(#shadow)" data-paint-role="card" id="element-019" />
+<g data-region="node-003" data-bounds="870,650,314,110">
+<use href="#icon-bell" x="872" y="655" width="32" height="32" color="#0b8f86" data-paint-role="accent" id="element-020" />
+<text x="916" y="681" font-size="26" fill="#1c2b4a" font-weight="700" text-anchor="start" data-paint-role="foreground" id="text-014" data-content-id="text-014"><tspan x="916" y="681.0">业务模块 C</tspan></text>
+<text x="872" y="728.8" font-size="24" fill="#1c2b4a" font-weight="400" text-anchor="start" id="text-015" data-content-id="text-015"><tspan x="872" y="728.8">替换为已确认职责</tspan></text>
+</g>
+</g><g id="node-004" data-group-id="group-001"><rect x="1230" y="632" width="358" height="146" rx="20" fill="#ffffff" fill-opacity="1" stroke="#8fe0d5" stroke-width="1.5" filter="url(#shadow)" data-paint-role="card" id="element-021" />
+<g data-region="node-004" data-bounds="1252,650,314,110">
+<use href="#icon-document" x="1254" y="655" width="32" height="32" color="#0b8f86" data-paint-role="accent" id="element-022" />
+<text x="1298" y="681" font-size="26" fill="#1c2b4a" font-weight="700" text-anchor="start" data-paint-role="foreground" id="text-016" data-content-id="text-016"><tspan x="1298" y="681.0">业务模块 D</tspan></text>
+<text x="1254" y="728.8" font-size="24" fill="#1c2b4a" font-weight="400" text-anchor="start" id="text-017" data-content-id="text-017"><tspan x="1254" y="728.8">替换为已确认职责</tspan></text>
+</g>
+</g></g><rect x="60" y="850" width="1552" height="250" rx="28" fill="#ffffff" fill-opacity="1" stroke="#ffd27a" stroke-width="1.5" filter="url(#shadow)" id="element-023" />
+<defs><clipPath id="band-clip-3"><rect x="60" y="850" width="1552" height="250" rx="28" /></clipPath></defs>
+<g clip-path="url(#band-clip-3)"><rect x="60" y="850" width="1552" height="80" fill="url(#gradient-orange)" id="element-024" />
+<rect x="60" y="850" width="1552" height="80" fill="#12306b" fill-opacity="0.16" id="element-025" />
+</g>
+<use href="#icon-layers" x="88" y="873" width="36" height="36" color="#ffffff" id="element-026" />
+<text x="140" y="901" font-size="30" fill="#ffffff" font-weight="700" text-anchor="start" id="text-018" data-content-id="text-018" data-region="region-text-018" data-bounds="134.0,858.0,1538.0,72.0"><tspan x="140" y="901.0">04  公共能力层</tspan></text>
+<g id="group-002" data-group-id="group-002"><g id="node-005" data-group-id="group-002"><rect x="84" y="954" width="485" height="116" rx="20" fill="#ffffff" fill-opacity="1" stroke="#ffd27a" stroke-width="1.5" filter="url(#shadow)" data-paint-role="card" id="element-027" />
+<g data-region="node-005" data-bounds="106,972,441,80">
+<use href="#icon-puzzle" x="108" y="977" width="32" height="32" color="#a2620a" data-paint-role="accent" id="element-028" />
+<text x="152" y="1003" font-size="26" fill="#1c2b4a" font-weight="700" text-anchor="start" data-paint-role="foreground" id="text-019" data-content-id="text-019"><tspan x="152" y="1003.0">共享模块 A</tspan></text>
+</g>
+</g><g id="node-006" data-group-id="group-002"><rect x="593" y="954" width="485" height="116" rx="20" fill="#ffffff" fill-opacity="1" stroke="#ffd27a" stroke-width="1.5" filter="url(#shadow)" data-paint-role="card" id="element-029" />
+<g data-region="node-006" data-bounds="615,972,441,80">
+<use href="#icon-queue" x="617" y="977" width="32" height="32" color="#a2620a" data-paint-role="accent" id="element-030" />
+<text x="661" y="1003" font-size="26" fill="#1c2b4a" font-weight="700" text-anchor="start" data-paint-role="foreground" id="text-020" data-content-id="text-020"><tspan x="661" y="1003.0">共享模块 B</tspan></text>
+</g>
+</g><g id="node-007" data-group-id="group-002"><rect x="1102" y="954" width="485" height="116" rx="20" fill="#ffffff" fill-opacity="1" stroke="#ffd27a" stroke-width="1.5" filter="url(#shadow)" data-paint-role="card" id="element-031" />
+<g data-region="node-007" data-bounds="1124,972,441,80">
+<use href="#icon-bell" x="1126" y="977" width="32" height="32" color="#a2620a" data-paint-role="accent" id="element-032" />
+<text x="1170" y="1003" font-size="26" fill="#1c2b4a" font-weight="700" text-anchor="start" data-paint-role="foreground" id="text-021" data-content-id="text-021"><tspan x="1170" y="1003.0">共享模块 C</tspan></text>
+</g>
+</g></g><rect x="60" y="1144" width="1552" height="230" rx="28" fill="#ffffff" fill-opacity="1" stroke="#8db8ff" stroke-width="1.5" filter="url(#shadow)" id="element-033" />
+<defs><clipPath id="band-clip-4"><rect x="60" y="1144" width="1552" height="230" rx="28" /></clipPath></defs>
+<g clip-path="url(#band-clip-4)"><rect x="60" y="1144" width="1552" height="80" fill="url(#gradient-blue)" id="element-034" />
+<rect x="60" y="1144" width="1552" height="80" fill="#12306b" fill-opacity="0.16" id="element-035" />
+</g>
+<use href="#icon-database" x="88" y="1167" width="36" height="36" color="#ffffff" id="element-036" />
+<text x="140" y="1195" font-size="30" fill="#ffffff" font-weight="700" text-anchor="start" id="text-022" data-content-id="text-022" data-region="region-text-022" data-bounds="134.0,1152.0,1538.0,72.0"><tspan x="140" y="1195.0">05  数据持久层</tspan></text>
+<g id="group-003" data-group-id="group-003"><g id="node-008" data-group-id="group-003"><rect x="84" y="1248" width="485" height="98" rx="20" fill="#ffffff" fill-opacity="1" stroke="#8db8ff" stroke-width="1.5" filter="url(#shadow)" data-paint-role="card" id="element-037" />
+<g data-region="node-008" data-bounds="106,1266,441,62">
+<use href="#icon-database" x="108" y="1271" width="32" height="32" color="#2468ee" data-paint-role="accent" id="element-038" />
+<text x="152" y="1297" font-size="26" fill="#1c2b4a" font-weight="700" text-anchor="start" data-paint-role="foreground" id="text-023" data-content-id="text-023"><tspan x="152" y="1297.0">数据类型 A</tspan></text>
+</g>
+</g><g id="node-009" data-group-id="group-003"><rect x="593" y="1248" width="485" height="98" rx="20" fill="#ffffff" fill-opacity="1" stroke="#8db8ff" stroke-width="1.5" filter="url(#shadow)" data-paint-role="card" id="element-039" />
+<g data-region="node-009" data-bounds="615,1266,441,62">
+<use href="#icon-database" x="617" y="1271" width="32" height="32" color="#2468ee" data-paint-role="accent" id="element-040" />
+<text x="661" y="1297" font-size="26" fill="#1c2b4a" font-weight="700" text-anchor="start" data-paint-role="foreground" id="text-024" data-content-id="text-024"><tspan x="661" y="1297.0">数据类型 B</tspan></text>
+</g>
+</g><g id="node-010" data-group-id="group-003"><rect x="1102" y="1248" width="485" height="98" rx="20" fill="#ffffff" fill-opacity="1" stroke="#8db8ff" stroke-width="1.5" filter="url(#shadow)" data-paint-role="card" id="element-041" />
+<g data-region="node-010" data-bounds="1124,1266,441,62">
+<use href="#icon-package" x="1126" y="1271" width="32" height="32" color="#2468ee" data-paint-role="accent" id="element-042" />
+<text x="1170" y="1297" font-size="26" fill="#1c2b4a" font-weight="700" text-anchor="start" data-paint-role="foreground" id="text-025" data-content-id="text-025"><tspan x="1170" y="1297.0">数据类型 C</tspan></text>
+</g>
+</g></g><rect x="60" y="1418" width="1552" height="172" rx="28" fill="#ffffff" fill-opacity="1" stroke="#cfe0fb" stroke-width="1.5" filter="url(#shadow)" id="element-043" />
+<defs><clipPath id="band-clip-5"><rect x="60" y="1418" width="1552" height="172" rx="28" /></clipPath></defs>
+<g clip-path="url(#band-clip-5)"><rect x="60" y="1418" width="1552" height="80" fill="url(#gradient-infra)" id="element-044" />
+</g>
+<use href="#icon-cloud" x="88" y="1441" width="36" height="36" color="#12306b" id="element-045" />
+<text x="140" y="1469" font-size="30" fill="#12306b" font-weight="700" text-anchor="start" id="text-026" data-content-id="text-026" data-region="region-text-026" data-bounds="134.0,1426.0,1538.0,72.0"><tspan x="140" y="1469.0">06  基础设施底座</tspan></text>
+<text x="94" y="1554" font-size="28" fill="#26406e" font-weight="600" text-anchor="start" id="text-027" data-content-id="text-027" data-region="region-text-027" data-bounds="88.0,1513.6,1584.0,68.0"><tspan x="94" y="1554.0">基础资源 · 运维支撑</tspan></text>
+<text x="60" y="1631" font-size="24" fill="#46618f" font-weight="400" text-anchor="start" id="text-028" data-content-id="text-028" data-region="region-text-028" data-bounds="54.0,1595.8,1618.0,60.0"><tspan x="60" y="1631.0">阅读说明：上下位置表示职责分层；实际调用关系应依据确认材料另绘连线。</tspan></text>
+</svg>

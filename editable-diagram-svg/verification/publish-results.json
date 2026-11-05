@@ -1,0 +1,67 @@
+{
+  "scope": "Publisher behavior tests; render/review records are simulated fixtures",
+  "ok": true,
+  "count": 14,
+  "passed_count": 13,
+  "blocked_count": 1,
+  "results": [
+    {
+      "key": "atomic_complete_replace",
+      "status": "通过"
+    },
+    {
+      "key": "replace_failure_preserves_target_and_cleans_temp",
+      "status": "通过"
+    },
+    {
+      "key": "concurrent_change_preserved",
+      "status": "通过"
+    },
+    {
+      "key": "exact_paint_edit_keeps_text_bytes",
+      "status": "通过"
+    },
+    {
+      "key": "mapping_count_assertion",
+      "status": "通过"
+    },
+    {
+      "key": "unapproved_geometry_change_rejected",
+      "status": "通过"
+    },
+    {
+      "key": "complete_evidence_publishes",
+      "status": "通过"
+    },
+    {
+      "key": "same_bytes_not_rewritten",
+      "status": "通过"
+    },
+    {
+      "key": "frozen_final_filename_enforced",
+      "status": "通过"
+    },
+    {
+      "key": "symbolic_link_output_preserves_target",
+      "status": "环境受阻",
+      "reason": "[WinError 1314] 客户端没有所需的特权。: 'C:\\\\Users\\\\user\\\\AppData\\\\Local\\\\Temp\\\\editable-svg-publish-v_45p279\\\\final.svg' -> 'C:\\\\Users\\\\user\\\\AppData\\\\Local\\\\Temp\\\\editable-svg-publish-v_45p279\\\\linked.svg'"
+    },
+    {
+      "key": "stale_report_preserves_target",
+      "status": "通过"
+    },
+    {
+      "key": "incomplete_visual_evidence_rejected",
+      "status": "通过"
+    },
+    {
+      "key": "blocked_draft_written_but_not_final",
+      "status": "通过"
+    },
+    {
+      "key": "failed_check_cannot_be_draft_bypass",
+      "status": "通过"
+    }
+  ],
+  "temporary_files_cleaned": true
+}

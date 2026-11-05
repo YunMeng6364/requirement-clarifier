@@ -1,0 +1,41 @@
+{
+  "scope": "Actual local renderer behavior; NaN/geometry cases explicitly fault-inject static-report fixtures. No actual agent visual review is claimed by these tests.",
+  "ok": true,
+  "count": 8,
+  "results": [
+    {
+      "key": "actual_renderer_png_and_geometry",
+      "status": "通过"
+    },
+    {
+      "key": "stale_static_report_preserves_old_png",
+      "status": "通过"
+    },
+    {
+      "key": "missing_browser_is_blocked_not_old_preview_success",
+      "status": "通过"
+    },
+    {
+      "key": "nan_region_rejected_with_fault_injected_precheck",
+      "status": "通过"
+    },
+    {
+      "key": "geometry_failure_is_separate_from_successful_screenshot",
+      "status": "通过"
+    },
+    {
+      "key": "duplicate_argument_is_configuration_error",
+      "status": "通过"
+    },
+    {
+      "key": "unknown_argument_is_configuration_error",
+      "status": "通过"
+    },
+    {
+      "key": "invalid_width_is_configuration_error",
+      "status": "通过"
+    }
+  ],
+  "renderer": "Playwright Chromium",
+  "temporary_files_cleaned": true
+}

@@ -1,0 +1,421 @@
+{
+  "schema_version": 1,
+  "confirmation": {
+    "status": "simulated",
+    "evidence": "本包approved-content或模板演示设定的模拟提纲确认；不是真实用户授权。"
+  },
+  "diagram": {
+    "id": "diagram-main",
+    "filename": "layers.svg",
+    "title": "系统分层模板 · 按职责组织模块",
+    "description": "虚构演示；按职责分层，不表示请求或执行的先后顺序。",
+    "topology": "nested",
+    "detail_level": "medium",
+    "viewBox": [
+      0.0,
+      0.0,
+      1672.0,
+      1660.0
+    ],
+    "width": 1672.0,
+    "height": 1660.0,
+    "display_width": 1600,
+    "background": {
+      "id": "element-001",
+      "gradient": {
+        "id": "background",
+        "stops": [
+          {
+            "offset": 0.0,
+            "color": "#f4f9ff"
+          },
+          {
+            "offset": 1.0,
+            "color": "#e9f2ff"
+          }
+        ],
+        "direction": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "defaults": {
+      "fill": "#26406e",
+      "stroke": "none",
+      "color": "#26406e"
+    }
+  },
+  "texts": [
+    {
+      "id": "text-001",
+      "value": "系统分层模板 · 按职责组织模块",
+      "region": "region-text-001",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-002",
+      "value": "布局模板 · 示例标签可替换，区域随内容扩展",
+      "region": "region-text-002",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-003",
+      "value": "使用入口",
+      "region": "region-text-003",
+      "fill": "#ffffff"
+    },
+    {
+      "id": "text-004",
+      "value": "网页端",
+      "region": "region-text-004",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-005",
+      "value": "终端端",
+      "region": "region-text-005",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-006",
+      "value": "助手端",
+      "region": "region-text-006",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-007",
+      "value": "02  接入与身份校验",
+      "region": "region-text-007",
+      "fill": "#ffffff"
+    },
+    {
+      "id": "text-008",
+      "value": "验证访问主体 · 明确统一接入边界",
+      "region": "region-text-008",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-009",
+      "value": "03  业务应用层",
+      "region": "region-text-009",
+      "fill": "#ffffff"
+    },
+    {
+      "id": "text-010",
+      "value": "业务模块 A",
+      "region": "node-001",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-011",
+      "value": "替换为已确认职责",
+      "region": "node-001",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-012",
+      "value": "业务模块 B",
+      "region": "node-002",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-013",
+      "value": "替换为已确认职责",
+      "region": "node-002",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-014",
+      "value": "业务模块 C",
+      "region": "node-003",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-015",
+      "value": "替换为已确认职责",
+      "region": "node-003",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-016",
+      "value": "业务模块 D",
+      "region": "node-004",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-017",
+      "value": "替换为已确认职责",
+      "region": "node-004",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-018",
+      "value": "04  公共能力层",
+      "region": "region-text-018",
+      "fill": "#ffffff"
+    },
+    {
+      "id": "text-019",
+      "value": "共享模块 A",
+      "region": "node-005",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-020",
+      "value": "共享模块 B",
+      "region": "node-006",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-021",
+      "value": "共享模块 C",
+      "region": "node-007",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-022",
+      "value": "05  数据持久层",
+      "region": "region-text-022",
+      "fill": "#ffffff"
+    },
+    {
+      "id": "text-023",
+      "value": "数据类型 A",
+      "region": "node-008",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-024",
+      "value": "数据类型 B",
+      "region": "node-009",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-025",
+      "value": "数据类型 C",
+      "region": "node-010",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-026",
+      "value": "06  基础设施底座",
+      "region": "region-text-026",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-027",
+      "value": "基础资源 · 运维支撑",
+      "region": "region-text-027",
+      "fill": "#26406e"
+    },
+    {
+      "id": "text-028",
+      "value": "阅读说明：上下位置表示职责分层；实际调用关系应依据确认材料另绘连线。",
+      "region": "region-text-028",
+      "fill": "#46618f"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "node-001",
+      "group": "group-001",
+      "title_text": "text-010"
+    },
+    {
+      "id": "node-002",
+      "group": "group-001",
+      "title_text": "text-012"
+    },
+    {
+      "id": "node-003",
+      "group": "group-001",
+      "title_text": "text-014"
+    },
+    {
+      "id": "node-004",
+      "group": "group-001",
+      "title_text": "text-016"
+    },
+    {
+      "id": "node-005",
+      "group": "group-002",
+      "title_text": "text-019"
+    },
+    {
+      "id": "node-006",
+      "group": "group-002",
+      "title_text": "text-020"
+    },
+    {
+      "id": "node-007",
+      "group": "group-002",
+      "title_text": "text-021"
+    },
+    {
+      "id": "node-008",
+      "group": "group-003",
+      "title_text": "text-023"
+    },
+    {
+      "id": "node-009",
+      "group": "group-003",
+      "title_text": "text-024"
+    },
+    {
+      "id": "node-010",
+      "group": "group-003",
+      "title_text": "text-025"
+    }
+  ],
+  "groups": [
+    {
+      "id": "group-001",
+      "members": [
+        "node-001",
+        "node-002",
+        "node-003",
+        "node-004"
+      ],
+      "paint": {
+        "kind": "solid",
+        "fill": "#ffffff",
+        "stroke": "#8fe0d5",
+        "accent": "#0b8f86",
+        "foreground": "#1c2b4a"
+      },
+      "reason": "本演示沿用该组视觉区分；仅本图与详图一致，不建立跨业务职责映射。"
+    },
+    {
+      "id": "group-002",
+      "members": [
+        "node-005",
+        "node-006",
+        "node-007"
+      ],
+      "paint": {
+        "kind": "solid",
+        "fill": "#ffffff",
+        "stroke": "#ffd27a",
+        "accent": "#a2620a",
+        "foreground": "#1c2b4a"
+      },
+      "reason": "本演示沿用该组视觉区分；仅本图与详图一致，不建立跨业务职责映射。"
+    },
+    {
+      "id": "group-003",
+      "members": [
+        "node-008",
+        "node-009",
+        "node-010"
+      ],
+      "paint": {
+        "kind": "solid",
+        "fill": "#ffffff",
+        "stroke": "#8db8ff",
+        "accent": "#2468ee",
+        "foreground": "#1c2b4a"
+      },
+      "reason": "本演示沿用该组视觉区分；仅本图与详图一致，不建立跨业务职责映射。"
+    }
+  ],
+  "relations": [],
+  "line_styles": [],
+  "visible_elements": [
+    "element-001",
+    "text-001",
+    "text-002",
+    "element-002",
+    "element-003",
+    "text-003",
+    "element-004",
+    "text-004",
+    "element-005",
+    "text-005",
+    "element-006",
+    "text-006",
+    "element-007",
+    "element-008",
+    "element-009",
+    "element-010",
+    "text-007",
+    "text-008",
+    "element-011",
+    "element-012",
+    "element-013",
+    "element-014",
+    "text-009",
+    "group-001",
+    "node-001",
+    "element-015",
+    "element-016",
+    "text-010",
+    "text-011",
+    "node-002",
+    "element-017",
+    "element-018",
+    "text-012",
+    "text-013",
+    "node-003",
+    "element-019",
+    "element-020",
+    "text-014",
+    "text-015",
+    "node-004",
+    "element-021",
+    "element-022",
+    "text-016",
+    "text-017",
+    "element-023",
+    "element-024",
+    "element-025",
+    "element-026",
+    "text-018",
+    "group-002",
+    "node-005",
+    "element-027",
+    "element-028",
+    "text-019",
+    "node-006",
+    "element-029",
+    "element-030",
+    "text-020",
+    "node-007",
+    "element-031",
+    "element-032",
+    "text-021",
+    "element-033",
+    "element-034",
+    "element-035",
+    "element-036",
+    "text-022",
+    "group-003",
+    "node-008",
+    "element-037",
+    "element-038",
+    "text-023",
+    "node-009",
+    "element-039",
+    "element-040",
+    "text-024",
+    "node-010",
+    "element-041",
+    "element-042",
+    "text-025",
+    "element-043",
+    "element-044",
+    "element-045",
+    "text-026",
+    "text-027",
+    "text-028"
+  ],
+  "assumptions": [
+    "全部内容为该示例给定的虚构或模板演示设定；不代表真实产品能力。"
+  ],
+  "fallback": {
+    "allowed": false,
+    "description": "改变内容、取色或图数须先确认；仅进行保持内容的几何修复。"
+  }
+}

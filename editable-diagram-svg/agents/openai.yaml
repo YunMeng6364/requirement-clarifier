@@ -1,0 +1,3 @@
+interface:
+  display_name: "可编辑 SVG 图"
+  short_description: "从材料提取结构，单次确认后生成色值受控、文字可编辑的 SVG，并实际渲染检查"

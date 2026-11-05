@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "stage": "visual",
+  "status": "通过",
+  "ok": true,
+  "svg_path": "d:/GitHub/requirement-clarifier/editable-diagram-svg/work/candidate.svg",
+  "svg_sha256": "f810e706dd1eaace804677f92c6e879d70e4cec086cf12bd45e4a4bf01d83245",
+  "acceptance_sha256": "2c6cd644863510bb73277b57dddb155c5e86dab4cb1a2f1b7db3c676a853bb1f",
+  "palette_sha256": "1d96561cb1848cbfc47559bd9d43f9ea33be0cd0cfae946120539c98afeed2d7",
+  "png_sha256": "38035528f01e40cc9b648cc37df1171d74c0054ebef0b619c1c645ed1b98bf18",
+  "png_path": "d:/GitHub/requirement-clarifier/editable-diagram-svg/work/preview.png",
+  "preview": {
+    "width": 1600,
+    "height": 900
+  },
+  "reviewed_at": "2026-11-05T08:22:50.339Z",
+  "acceptance_version": "2c6cd644863510bb73277b57dddb155c5e86dab4cb1a2f1b7db3c676a853bb1f",
+  "checks": {
+    "glyphs": true,
+    "icons": true,
+    "text_layout": true,
+    "connections": true,
+    "clipping": true,
+    "colors": true,
+    "reading_order": true,
+    "content": true
+  },
+  "results": [
+    {
+      "key": "glyphs",
+      "status": "通过",
+      "reason": "中文、英文、数字及 ①–⑨ 圈号全部正常显示，无缺字或豆腐块",
+      "evidence": null,
+      "required": true
+    },
+    {
+      "key": "icons",
+      "status": "通过",
+      "reason": "icon-document×2 / icon-shield / icon-package×2 / icon-edit / icon-layers / icon-cloud 全部渲染，无缺失或变形",
+      "evidence": null,
+      "required": true
+    },
+    {
+      "key": "text_layout",
+      "status": "通过",
+      "reason": "标题、副标题、四个组标题、卡片名称与副标题、条件标签、图例与注记均可读，无截断、省略号或压字",
+      "evidence": null,
+      "required": true
+    },
+    {
+      "key": "connections",
+      "status": "通过",
+      "reason": "3 条实线停在三个分组容器顶边，2 条虚线停在两张源码目录卡底边；箭头完整；交叉处靠线型与颜色区分，无连线穿字",
+      "evidence": null,
+      "required": true
+    },
+    {
+      "key": "clipping",
+      "status": "通过",
+      "reason": "按 1600 宽全图无溢出、无遮挡、阴影与箭头未裁切",
+      "evidence": null,
+      "required": true
+    },
+    {
+      "key": "colors",
+      "status": "通过",
+      "reason": "浅蓝渐变背景、蓝/青绿/橙饱和主标题栏配白字、白卡细边框与轻阴影、蓝灰次级容器深字、强色侧条均可见；未引入新增主色",
+      "evidence": null,
+      "required": true
+    },
+    {
+      "key": "reading_order",
+      "status": "通过",
+      "reason": "标题 → 仓库根 → 三组左至右 → 组内自上而下 → 底部图例与注记，顺序明确",
+      "evidence": null,
+      "required": true
+    },
+    {
+      "key": "content",
+      "status": "通过",
+      "reason": "9 个条目名称、编号与 README 目录表逐字一致，使用环节取自目录表第二列；仓库根 5 个文件名与 2/6/1 计数正确；无补造模块、版本信息或执行顺序箭头",
+      "evidence": null,
+      "required": true
+    },
+    {
+      "key": "revision",
+      "status": "通过",
+      "reason": "首次目视发现两个「源码在此」条件标签上下紧贴；将其一横向移至 x=1100 后重渲染，标签已分开且不压线。仅调整坐标，冻结文字、关系与配色未变",
+      "evidence": null,
+      "required": false
+    }
+  ],
+  "limitations": [
+    "目视由 Agent 实际读取 1600x900 PNG 完成，非人工目视",
+    "渲染器为 Chrome headless 而非官方 render_svg.cjs（缺 Playwright Node 包）"
+  ]
+}

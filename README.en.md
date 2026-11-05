@@ -7,7 +7,7 @@
 #### From clear requirements to focused execution — save useful skills and install as needed
 
 [![License](https://img.shields.io/badge/License-MIT-3B82F6?style=for-the-badge)](./LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-8-10B981?style=for-the-badge)](#-skills)
+[![Skills](https://img.shields.io/badge/Skills-9-10B981?style=for-the-badge)](#-skills)
 [![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-8B5CF6?style=for-the-badge)](https://agentskills.io)
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-D97706?style=flat-square&logo=anthropic&logoColor=white)
@@ -17,9 +17,15 @@
 
 My index of useful AI skills, kept here for easy reference, download, and installation throughout my workflow.
 
-Currently lists **8 entries: 7 individual skills + 1 skill collection**. The individual skills include 1 maintained here and 6 external skills; the two `grill-me` sources are listed separately, and duplicate links to the same repository count only once. Only `requirement-clarifier` is stored in this repository. External skills and collections link to their authors or maintainers without copying source; follow their official documentation for installation and updates.
+Currently lists **9 entries: 8 individual skills + 1 skill collection**. The individual skills include 2 maintained here and 6 external skills; the two `grill-me` sources are listed separately, and duplicate links to the same repository count only once. `requirement-clarifier` and `editable-diagram-svg` are maintained in this repository with their full companion files. External skills and collections link to their authors or maintainers without copying source; follow their official documentation for installation and updates.
 
 Skills are structured instruction sets that agents can load. Tools supporting the [Agent Skills](https://agentskills.io) standard can load compatible skills; support for extras such as plugins and hooks depends on the tool and its installation instructions.
+
+## 🗺️ Repository at a glance
+
+![Common AI Skill Index — Repository Architecture](./image/repo-architecture.svg)
+
+*This diagram is a real output sample of this repository's [editable-diagram-svg](./editable-diagram-svg/SKILL.md): it extracts the 9 entries and their sources from the README and organizes them as "repository root → three collection groups" in an editable SVG. Generation followed the full workflow — one outline confirmation, a frozen manifest, static validation, an actual render with visual inspection, then atomic publishing. Colors come from the preset allowlist, and text remains editable `text/tspan` rather than converted paths. [Fallback PNG preview](./image/repo-architecture.png).*
 
 ---
 
@@ -35,6 +41,7 @@ Skills are structured instruction sets that agents can load. Tools supporting th
 | 🐴 [**ponytail**](#ponytail) | Coding and review: avoid unnecessary code | Reuses existing code and platform features for the smallest complete change | [Author's repository](https://github.com/DietrichGebert/ponytail) · [Raw download](https://raw.githubusercontent.com/DietrichGebert/ponytail/main/skills/ponytail/SKILL.md) |
 | 🧠 [**i-have-adhd**](#-i-have-adhd) | During execution: reduce reading friction | Makes the agent lead with actions, number steps, suppress tangents, and clarify what comes next | [Original repository](https://github.com/ayghri/i-have-adhd) · [Raw download](https://raw.githubusercontent.com/ayghri/i-have-adhd/main/skills/i-have-adhd/SKILL.md) |
 | 🎨 [**guizang-ppt-skill**](#guizang-ppt-skill) | Presentation delivery: turn content into a talk | Creates magazine-style or Swiss-style single-file HTML slide decks with presenter mode and notes | [Author's repository](https://github.com/op7418/guizang-ppt-skill) · [Raw download](https://raw.githubusercontent.com/op7418/guizang-ppt-skill/main/SKILL.md) · [Full repository ZIP](https://github.com/op7418/guizang-ppt-skill/archive/refs/heads/main.zip) |
+| 🖼️ [**editable-diagram-svg**](#editable-diagram-svg) | Diagram delivery: turn structure into an editable vector graphic | Extracts structure from text, docs, source, or an existing diagram and produces a palette-constrained editable SVG after one outline confirmation | [Local skill](./editable-diagram-svg/SKILL.md) · [Raw download](https://raw.githubusercontent.com/YunMeng6364/requirement-clarifier/main/editable-diagram-svg/SKILL.md) · [Full directory](https://github.com/YunMeng6364/requirement-clarifier/tree/main/editable-diagram-svg) |
 
 ### Putting them together
 
@@ -44,7 +51,7 @@ For coding tasks, choose `karpathy-guidelines` to constrain assumptions, scope, 
 
 For more specific engineering steps, choose from `mattpocock/skills`: `grill-with-docs` for alignment and decision records, `tdd` for test-driven implementation, or `diagnosing-bugs` for diagnosis. There is no need to activate the entire collection.
 
-For a talk, report, or launch presentation, use `guizang-ppt-skill` to turn the confirmed content into a web slide deck.
+For a talk, report, or launch presentation, use `guizang-ppt-skill` to turn the confirmed content into a web slide deck. When the result is a structure — architecture, flow, hierarchy, or comparison — use `editable-diagram-svg` to produce an editable SVG; it presents a full outline for a single confirmation before drawing.
 
 ---
 
@@ -57,6 +64,18 @@ In an agent that supports Agent Skills (Claude Code, Codex…), just say:
 ```
 Install this skill: https://github.com/YunMeng6364/requirement-clarifier/tree/main/requirement-clarifier
 ```
+
+### editable-diagram-svg
+
+This skill depends on `references/`, `assets/`, `scripts/`, `verification/`, and other companion files. Install the whole directory; a standalone `SKILL.md` cannot perform palette validation or real rendering. Copy this prompt into your agent:
+
+```text
+Install this skill: https://github.com/YunMeng6364/requirement-clarifier/tree/main/editable-diagram-svg
+Keep the complete directory: SKILL.md, references/ (including palette.json), assets/ (including templates/ and icons.svg), scripts/, verification/, examples/, and agents/. Do not download only SKILL.md.
+Rendering checks require Playwright with Chromium or another verified local renderer. If unavailable, mark the render check as not performed as described in SKILL.md; do not install dependencies or fabricate render results.
+```
+
+→ [SKILL.md](./editable-diagram-svg/SKILL.md) · [Full directory](https://github.com/YunMeng6364/requirement-clarifier/tree/main/editable-diagram-svg)
 
 ### grill-me (two sources; choose one)
 
@@ -133,7 +152,7 @@ Read README.md first and install the complete skill for my current tool, keeping
 
 → [Official installation notes](https://github.com/op7418/guizang-ppt-skill#readme) · [Full repository ZIP](https://github.com/op7418/guizang-ppt-skill/archive/refs/heads/main.zip)
 
-**Only need the instructions?** Open “Raw download” in the index and save the page as `SKILL.md`. If your agent does not support skills, you can try using the text as project rules or pasting it into a conversation. This provides instructions only, not companion templates, scripts, plugin hooks, or automatic loading; equivalent behavior is not guaranteed. Install `guizang-ppt-skill` in full because it depends on repository resources. A downloaded ZIP also needs to be placed in your tool's skill directory according to its installation requirements.
+**Only need the instructions?** Open “Raw download” in the index and save the page as `SKILL.md`. If your agent does not support skills, you can try using the text as project rules or pasting it into a conversation. This provides instructions only, not companion templates, scripts, palettes, plugin hooks, or automatic loading; equivalent behavior is not guaranteed. Both `editable-diagram-svg` and `guizang-ppt-skill` depend on repository resources and should be installed in full. A downloaded ZIP also needs to be placed in your tool's skill directory according to its installation requirements.
 
 ---
 
@@ -412,9 +431,47 @@ Add speaker notes and planned timings to each slide
 
 ---
 
+<a id="editable-diagram-svg"></a>
+
+### 🖼️ editable-diagram-svg
+
+> *Get the structure right first, then produce a vector file where every stroke stays editable.*
+
+**It turns structure found in text, documents, source code, configuration, data, or an existing diagram into an editable SVG.** The visual system is fixed: a light blue gradient background, saturated group header bars with white text, white rounded cards, and inline vector icons. Text stays real `text/tspan` elements rather than converted paths, so wording and colors can be changed directly in the source.
+
+**One confirmation before drawing**
+
+Before generating, it presents a complete outline — scope, every visible element, relationships and direction, one primary topology (nested / left-to-right / hub-and-spoke / timeline / grid / tree / funnel / comparison), detail level, exact color choices, line styles and legend, split-diagram suggestions, and fallbacks. You confirm once and the outline is frozen; later changes to content, color, or diagram count require an incremental confirmation rather than silent edits.
+
+Colors come only from the allowlisted `palette.json`, never inferred from business roles. After generation it runs structural and palette validation, then **actually renders and visually inspects** the result at target size — checking line breaks, occlusion, arrow endpoints, and white-text legibility. A generated PNG or a passing keyword check does not substitute for visual inspection.
+
+**How to trigger** (Chinese)
+
+```text
+把这份架构说明画成可编辑 SVG
+根据这段代码整理一张模块关系图
+把这份流程图改成浅蓝渐变风格
+```
+
+**Good for**
+
+- Architecture, flow, hierarchy, network, timeline, and comparison diagrams
+- Delivering an editable vector source that will need wording or color changes later
+- Consistent color, line style, and legend rules verified by a real render
+
+**Not good for**
+
+- Photos, raster illustrations, logos, or anything needing bitmap texture
+- A quick throwaway sketch without an outline confirmation
+- Environments with no verified renderer where full render sign-off is required
+
+→ [SKILL.md](./editable-diagram-svg/SKILL.md) · [Full directory](https://github.com/YunMeng6364/requirement-clarifier/tree/main/editable-diagram-svg) · [Color spec](./editable-diagram-svg/references/color-spec.md) · [Verification guide](./editable-diagram-svg/references/verification.md)
+
+---
+
 ## 🗂️ Maintaining this index
 
-For each new skill, add its **workflow stage, one-line purpose, source, and raw download link** to the index, then follow the existing format for its description and official installation link. Install and update external skills from upstream rather than maintaining copies here.
+For each new skill, add its **workflow stage, one-line purpose, source, and raw download link** to the index, then follow the existing format for its description and official installation link. Skills maintained here need their full companion directories; install and update external skills from upstream rather than maintaining copies here.
 
 A README is enough for now. Consider an installation manifest and scripts only when bulk installation, version pinning, or automatic cross-device synchronization becomes necessary.
 

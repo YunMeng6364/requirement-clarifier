@@ -7,7 +7,7 @@
 #### 从需求澄清到专注执行，记录常用 Skill，按需安装
 
 [![License](https://img.shields.io/badge/License-MIT-3B82F6?style=for-the-badge)](./LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-8-10B981?style=for-the-badge)](#-skills)
+[![Skills](https://img.shields.io/badge/Skills-9-10B981?style=for-the-badge)](#-skills)
 [![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-8B5CF6?style=for-the-badge)](https://agentskills.io)
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-D97706?style=flat-square&logo=anthropic&logoColor=white)
@@ -17,9 +17,15 @@
 
 这是我的常用 AI Skill 索引，用来记录、下载和安装工作流里用得上的 Skill，也分享给有需要的人。
 
-目前收录 **8 个条目：7 个单项 Skill + 1 个 Skill 合集**。单项中有 1 个由本仓库维护、6 个来自外部；两个 `grill-me` 来源分别列出，同一仓库的重复链接不重复收录。本仓库只保存 `requirement-clarifier` 的指令文件；外部 Skill 和合集保留作者或维护者链接，不复制源码，安装与更新以其官方文档为准。
+目前收录 **9 个条目：8 个单项 Skill + 1 个 Skill 合集**。单项中有 2 个由本仓库维护、6 个来自外部；两个 `grill-me` 来源分别列出，同一仓库的重复链接不重复收录。本仓库维护 `requirement-clarifier` 和 `editable-diagram-svg` 两个 Skill 的完整文件；外部 Skill 和合集保留作者或维护者链接，不复制源码，安装与更新以其官方文档为准。
 
 Skill 是 Agent 可以加载的结构化指令集。支持 [Agent Skills](https://agentskills.io) 标准的工具可以加载兼容的 Skill；插件、钩子等额外能力是否可用，需查看对应工具的安装说明。
+
+## 🗺️ 仓库一览
+
+![常用 AI Skill 索引 · 仓库架构](./image/repo-architecture.svg)
+
+*本图由本仓库的 [editable-diagram-svg](./editable-diagram-svg/SKILL.md) 生成，也是这个 Skill 的实际产出示例：从 README 提取 9 个条目与来源关系，按「仓库根 → 三组收录」组织成可编辑 SVG。生成遵循其完整流程——一次提纲确认、冻结清单、静态校验、实际渲染目视后发布；配色取自预设白名单，文字仍是 `text/tspan`，改字改色可直接在源码里完成。[备用的 PNG 展示副本](./image/repo-architecture.png)。*
 
 ---
 
@@ -35,6 +41,7 @@ Skill 是 Agent 可以加载的结构化指令集。支持 [Agent Skills](https:
 | 🐴 [**ponytail（极简实现）**](#ponytail) | 编码与审查：减少不必要代码 | 优先复用现有代码和平台能力，用最小但完整的改动解决任务 | [作者仓库](https://github.com/DietrichGebert/ponytail) · [原文下载](https://raw.githubusercontent.com/DietrichGebert/ponytail/main/skills/ponytail/SKILL.md) |
 | 🧠 [**i-have-adhd（专注输出）**](#-i-have-adhd专注输出) | 执行中：降低阅读负担 | 让 Agent 先给行动、分步表达、减少岔题，明确下一步 | [原作者仓库](https://github.com/ayghri/i-have-adhd) · [原文下载](https://raw.githubusercontent.com/ayghri/i-have-adhd/main/skills/i-have-adhd/SKILL.md) |
 | 🎨 [**guizang-ppt-skill（归藏网页 PPT）**](#guizang-ppt-skill) | 演示交付：把内容做成分享 | 生成杂志风 / 瑞士风的单文件 HTML 演示文稿，支持演讲者模式与备注 | [作者仓库](https://github.com/op7418/guizang-ppt-skill) · [原文下载](https://raw.githubusercontent.com/op7418/guizang-ppt-skill/main/SKILL.md) · [完整仓库 ZIP](https://github.com/op7418/guizang-ppt-skill/archive/refs/heads/main.zip) |
+| 🖼️ [**editable-diagram-svg（可编辑 SVG 图）**](#editable-diagram-svg) | 图示交付：把结构画成可编辑矢量图 | 从文字、文档、源码或已有图提取结构，一次提纲确认后生成预设色板的可编辑 SVG | [本仓库](./editable-diagram-svg/SKILL.md) · [原文下载](https://raw.githubusercontent.com/YunMeng6364/requirement-clarifier/main/editable-diagram-svg/SKILL.md) · [完整目录](https://github.com/YunMeng6364/requirement-clarifier/tree/main/editable-diagram-svg) |
 
 ### 怎么串成工作流
 
@@ -44,7 +51,7 @@ Skill 是 Agent 可以加载的结构化指令集。支持 [Agent Skills](https:
 
 需要更细的工程步骤时，可以从 `mattpocock/skills` 合集中按需选用 `grill-with-docs` 对齐需求并记录决策、`tdd` 测试驱动实现、`diagnosing-bugs` 诊断故障，不必整套启用。
 
-需要把结果用于分享、汇报或发布时，再用 `guizang-ppt-skill` 把确认后的内容做成网页 PPT。
+需要把结果用于分享、汇报或发布时，可以用 `guizang-ppt-skill` 把确认后的内容做成网页 PPT；需要把架构、流程或层级关系画成可编辑矢量图时，用 `editable-diagram-svg` 生成 SVG——它在出图前会先给一份完整提纲，让你一次确认再生成。
 
 ---
 
@@ -57,6 +64,18 @@ Skill 是 Agent 可以加载的结构化指令集。支持 [Agent Skills](https:
 ```
 帮我安装这个 skill：https://github.com/YunMeng6364/requirement-clarifier/tree/main/requirement-clarifier
 ```
+
+### editable-diagram-svg
+
+这个 Skill 依赖 `references/`、`assets/`、`scripts/`、`verification/` 等配套文件，必须安装完整目录；只下载 `SKILL.md` 无法完成取色、校验和实际渲染。把下面这段话复制给你的 Agent：
+
+```text
+帮我安装这个 skill：https://github.com/YunMeng6364/requirement-clarifier/tree/main/editable-diagram-svg
+请保留完整目录结构，包含 SKILL.md、references/（含 palette.json）、assets/（含 templates/ 与 icons.svg）、scripts/、verification/、examples/ 和 agents/，不要只下载 SKILL.md。
+渲染检查需要本机已具备 Playwright 与 Chromium，或其他已核实的本地渲染器；缺少时按 SKILL.md 说明标注「未完成渲染验收」，不要擅自安装依赖或编造渲染结果。
+```
+
+→ [SKILL.md](./editable-diagram-svg/SKILL.md) · [完整目录](https://github.com/YunMeng6364/requirement-clarifier/tree/main/editable-diagram-svg)
 
 ### grill-me（两个来源，建议二选一）
 
@@ -133,7 +152,7 @@ Skill 是 Agent 可以加载的结构化指令集。支持 [Agent Skills](https:
 
 → [官方安装说明](https://github.com/op7418/guizang-ppt-skill#readme) · [完整仓库 ZIP](https://github.com/op7418/guizang-ppt-skill/archive/refs/heads/main.zip)
 
-**只想下载指令？** 点击目录里的「原文下载」，将页面另存为 `SKILL.md`。不支持 Skill 的 Agent 也可以尝试把全文作为项目规则或贴进对话使用，但这只提供指令文本，不包含配套模板、脚本、插件钩子或自动加载等能力，不能保证效果一致。`guizang-ppt-skill` 依赖仓库中的配套资源，应完整安装；ZIP 下载后也需要按当前工具的要求放入 Skill 目录。
+**只想下载指令？** 点击目录里的「原文下载」，将页面另存为 `SKILL.md`。不支持 Skill 的 Agent 也可以尝试把全文作为项目规则或贴进对话使用，但这只提供指令文本，不包含配套模板、脚本、色板、插件钩子或自动加载等能力，不能保证效果一致。`editable-diagram-svg` 和 `guizang-ppt-skill` 都依赖仓库中的配套资源，应完整安装；ZIP 下载后也需要按当前工具的要求放入 Skill 目录。
 
 ---
 
@@ -413,9 +432,48 @@ ponytail，用最简单但完整的方案实现这个功能，优先复用已有
 
 ---
 
+<a id="editable-diagram-svg"></a>
+
+### 🖼️ editable-diagram-svg（可编辑 SVG 图）
+
+> *结构先讲清楚，再落成一笔一划都能改的矢量图。*
+
+**它把文字、文档、源码、配置、数据或已有图里的结构，生成成一张可编辑的 SVG。** 固定视觉风格：浅蓝渐变背景、饱和色主分组标题栏配白字、白色圆角卡片、内嵌矢量图标。文字是真正的 `text/tspan`，不是转成路径的图片，改字改色都能直接在源码里做。
+
+**出图前只确认一次**
+
+生成前它会先给一份完整提纲——图名与边界、要画什么、关系与方向、主拓扑（nested / left-to-right / hub-and-spoke / timeline / grid / tree / funnel / comparison）、细节分级、精确取色、线型图例、拆图建议与回退方案——你一次确认后冻结再生成。确认后要改内容、颜色或图数，需要增量确认，不会悄悄改动。
+
+颜色只能取自预设白名单 `palette.json`，不按业务职责自动定色；生成后还要跑结构与色板校验，并用已核实的渲染工具**实际渲染目视**（中文换行、遮挡、箭头端点、白字可读性等）。PNG 生成成功或关键词校验通过都不算替代目视检查。
+
+**怎么触发**
+
+```text
+把这份架构说明画成可编辑 SVG
+根据这段代码整理一张模块关系图
+把这份流程图改成浅蓝渐变风格
+给这张图补一张「总览 + 机制」的分层详图
+```
+
+**适合**
+
+- 架构、流程、层级、网络、时间线与对比图
+- 需要交付可继续编辑的矢量源文件，后续要改文字或配色
+- 希望配色、线型、图例有统一规范，并经过实际渲染检查
+
+**不适合**
+
+- 照片、栅格插画、品牌标志或需要位图质感的内容
+- 只想快速要一张示意图，不想先确认提纲
+- 当前环境没有任何可用渲染器，却要求完成渲染验收
+
+→ [SKILL.md](./editable-diagram-svg/SKILL.md) · [完整目录](https://github.com/YunMeng6364/requirement-clarifier/tree/main/editable-diagram-svg) · [允许色板](./editable-diagram-svg/references/color-spec.md) · [校验说明](./editable-diagram-svg/references/verification.md)
+
+---
+
 ## 🗂️ 后续怎么维护
 
-新增常用 Skill 时，在目录里补上**使用环节、一句话用途、来源和原文下载链接**，再按现有格式补充介绍及官方安装入口即可。外部 Skill 从上游安装和更新，不在这里维护副本。
+新增常用 Skill 时，在目录里补上**使用环节、一句话用途、来源和原文下载链接**，再按现有格式补充介绍及官方安装入口即可。本仓库自建的 Skill 需要保留完整配套目录；外部 Skill 从上游安装和更新，不在这里维护副本。
 
 当前用 README 就够了；等确实需要批量安装、固定版本或跨设备自动同步时，再考虑增加安装清单和脚本。
 

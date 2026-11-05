@@ -1,0 +1,716 @@
+{
+  "schema_version": 1,
+  "confirmation": {
+    "status": "approved",
+    "evidence": "用户于 2026-11-05 回复「确认」，批准本轮完整提纲（含推荐项 A：补装 Python 运行时）"
+  },
+  "diagram": {
+    "id": "diagram-main",
+    "filename": "repo-architecture.svg",
+    "title": "常用 AI Skill 索引 · 仓库架构",
+    "description": "仓库根目录的文件结构，以及 README 收录的 9 个 Skill 条目按来源分成三组；实线表示索引收录，虚线表示本仓库维护 Skill 的源码目录对应。使用环节为按需组合，不是自动编排。",
+    "topology": "nested",
+    "detail_level": "medium",
+    "viewBox": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "width": 1920,
+    "height": 1080,
+    "display_width": 1600,
+    "background": {
+      "id": "diagram-background",
+      "gradient": {
+        "id": "gradient-bg",
+        "direction": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "stops": [
+          {
+            "offset": 0,
+            "color": "#f4f9ff"
+          },
+          {
+            "offset": 1,
+            "color": "#e9f2ff"
+          }
+        ]
+      }
+    },
+    "defaults": {
+      "fill": "#ffffff",
+      "stroke": "none",
+      "color": "#1c2b4a"
+    }
+  },
+  "texts": [
+    {
+      "id": "text-title",
+      "value": "常用 AI Skill 索引 · 仓库架构",
+      "region": "region-title",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-subtitle",
+      "value": "9 个条目 · 2 本仓库维护 / 6 外部单项 / 1 外部合集",
+      "region": "region-title",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-title-frame-root",
+      "value": "仓库根 · 索引与源码",
+      "region": "frame-root",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-name-node-file-readme",
+      "value": "README.md",
+      "region": "node-file-readme",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-desc-node-file-readme",
+      "value": "中文索引",
+      "region": "node-file-readme",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-name-node-file-readme-en",
+      "value": "README.en.md",
+      "region": "node-file-readme-en",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-desc-node-file-readme-en",
+      "value": "English index",
+      "region": "node-file-readme-en",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-name-node-file-license",
+      "value": "LICENSE",
+      "region": "node-file-license",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-desc-node-file-license",
+      "value": "MIT",
+      "region": "node-file-license",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-name-node-dir-req",
+      "value": "requirement-clarifier/",
+      "region": "node-dir-req",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-desc-node-dir-req",
+      "value": "本仓库维护",
+      "region": "node-dir-req",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-name-node-dir-svg",
+      "value": "editable-diagram-svg/",
+      "region": "node-dir-svg",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-desc-node-dir-svg",
+      "value": "本仓库维护",
+      "region": "node-dir-svg",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-title-frame-local",
+      "value": "组 1 本仓库维护 · 2",
+      "region": "frame-local",
+      "fill": "#ffffff"
+    },
+    {
+      "id": "text-name-node-01",
+      "value": "① requirement-clarifier",
+      "region": "node-01",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-desc-node-01",
+      "value": "开工前：理清需求",
+      "region": "node-01",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-name-node-02",
+      "value": "② editable-diagram-svg",
+      "region": "node-02",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-desc-node-02",
+      "value": "图示交付：可编辑 SVG",
+      "region": "node-02",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-title-frame-external",
+      "value": "组 2 外部单项 · 6",
+      "region": "frame-external",
+      "fill": "#ffffff"
+    },
+    {
+      "id": "text-name-node-03",
+      "value": "③ grill-me（RobMitt 版）",
+      "region": "node-03",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-desc-node-03",
+      "value": "方案成形后：逐项追问",
+      "region": "node-03",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-name-node-04",
+      "value": "④ grill-me（zhudan930612 版）",
+      "region": "node-04",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-desc-node-04",
+      "value": "方案 / 文档：压力测试",
+      "region": "node-04",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-name-node-05",
+      "value": "⑤ karpathy-guidelines",
+      "region": "node-05",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-desc-node-05",
+      "value": "编码：约束实现",
+      "region": "node-05",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-name-node-06",
+      "value": "⑥ ponytail",
+      "region": "node-06",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-desc-node-06",
+      "value": "编码：减少不必要代码",
+      "region": "node-06",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-name-node-07",
+      "value": "⑦ i-have-adhd",
+      "region": "node-07",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-desc-node-07",
+      "value": "执行中：降低阅读负担",
+      "region": "node-07",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-name-node-08",
+      "value": "⑧ guizang-ppt-skill",
+      "region": "node-08",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-desc-node-08",
+      "value": "演示交付：网页 PPT",
+      "region": "node-08",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-title-frame-collection",
+      "value": "组 3 外部合集 · 1",
+      "region": "frame-collection",
+      "fill": "#ffffff"
+    },
+    {
+      "id": "text-name-node-09",
+      "value": "⑨ mattpocock/skills",
+      "region": "node-09",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-desc-node-09",
+      "value": "按需工程步骤",
+      "region": "node-09",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-cond-1",
+      "value": "索引收录",
+      "region": "region-relations",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-cond-2",
+      "value": "索引收录",
+      "region": "region-relations",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-cond-3",
+      "value": "索引收录",
+      "region": "region-relations",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-cond-4",
+      "value": "源码在此",
+      "region": "region-relations",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-cond-5",
+      "value": "源码在此",
+      "region": "region-relations",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-legend-1",
+      "value": "实线＝索引收录（包含）",
+      "region": "region-legend",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-legend-2",
+      "value": "虚线＝源码在此（对应）",
+      "region": "region-legend",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-note-1",
+      "value": "外部条目仅保留作者 / 维护者链接，不在本仓库存源码",
+      "region": "region-legend",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-note-2",
+      "value": "环节为按需组合，不是自动编排",
+      "region": "region-legend",
+      "fill": "#46618f"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "node-file-readme",
+      "group": "group-root",
+      "title_text": "text-name-node-file-readme"
+    },
+    {
+      "id": "node-file-readme-en",
+      "group": "group-root",
+      "title_text": "text-name-node-file-readme-en"
+    },
+    {
+      "id": "node-file-license",
+      "group": "group-root",
+      "title_text": "text-name-node-file-license"
+    },
+    {
+      "id": "node-dir-req",
+      "group": "group-root",
+      "title_text": "text-name-node-dir-req"
+    },
+    {
+      "id": "node-dir-svg",
+      "group": "group-root",
+      "title_text": "text-name-node-dir-svg"
+    },
+    {
+      "id": "frame-root",
+      "group": "group-root",
+      "title_text": "text-title-frame-root"
+    },
+    {
+      "id": "node-01",
+      "group": "group-local",
+      "title_text": "text-name-node-01"
+    },
+    {
+      "id": "node-02",
+      "group": "group-local",
+      "title_text": "text-name-node-02"
+    },
+    {
+      "id": "frame-local",
+      "group": "group-local",
+      "title_text": "text-title-frame-local"
+    },
+    {
+      "id": "node-03",
+      "group": "group-external",
+      "title_text": "text-name-node-03"
+    },
+    {
+      "id": "node-04",
+      "group": "group-external",
+      "title_text": "text-name-node-04"
+    },
+    {
+      "id": "node-05",
+      "group": "group-external",
+      "title_text": "text-name-node-05"
+    },
+    {
+      "id": "node-06",
+      "group": "group-external",
+      "title_text": "text-name-node-06"
+    },
+    {
+      "id": "node-07",
+      "group": "group-external",
+      "title_text": "text-name-node-07"
+    },
+    {
+      "id": "node-08",
+      "group": "group-external",
+      "title_text": "text-name-node-08"
+    },
+    {
+      "id": "frame-external",
+      "group": "group-external",
+      "title_text": "text-title-frame-external"
+    },
+    {
+      "id": "node-09",
+      "group": "group-collection",
+      "title_text": "text-name-node-09"
+    },
+    {
+      "id": "frame-collection",
+      "group": "group-collection",
+      "title_text": "text-title-frame-collection"
+    }
+  ],
+  "groups": [
+    {
+      "id": "group-root",
+      "members": [
+        "frame-root",
+        "node-file-readme",
+        "node-file-readme-en",
+        "node-file-license",
+        "node-dir-req",
+        "node-dir-svg"
+      ],
+      "paint": {
+        "kind": "gradient",
+        "fill": "#ffffff",
+        "stroke": "#cfe0fb",
+        "accent": "#46618f",
+        "foreground": "#12306b",
+        "header_gradient": {
+          "id": "gradient-root",
+          "direction": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "stops": [
+            {
+              "offset": 0,
+              "color": "#e8eef8"
+            },
+            {
+              "offset": 1,
+              "color": "#cfd9ea"
+            }
+          ]
+        }
+      },
+      "reason": "蓝灰低饱和次级区域表示仓库根基础设施，与三组主分组拉开层级"
+    },
+    {
+      "id": "group-local",
+      "members": [
+        "frame-local",
+        "node-01",
+        "node-02"
+      ],
+      "paint": {
+        "kind": "gradient",
+        "fill": "#ffffff",
+        "stroke": "#cfe0fb",
+        "accent": "#2468ee",
+        "foreground": "#12306b",
+        "header_gradient": {
+          "id": "gradient-blue",
+          "direction": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "stops": [
+            {
+              "offset": 0,
+              "color": "#3b8bff"
+            },
+            {
+              "offset": 1,
+              "color": "#1b57e0"
+            }
+          ]
+        }
+      },
+      "reason": "蓝色为既定基准主色，标出本仓库自己维护的两个 Skill"
+    },
+    {
+      "id": "group-external",
+      "members": [
+        "frame-external",
+        "node-03",
+        "node-04",
+        "node-05",
+        "node-06",
+        "node-07",
+        "node-08"
+      ],
+      "paint": {
+        "kind": "gradient",
+        "fill": "#ffffff",
+        "stroke": "#8fe0d5",
+        "accent": "#12a898",
+        "foreground": "#12306b",
+        "header_gradient": {
+          "id": "gradient-teal",
+          "direction": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "stops": [
+            {
+              "offset": 0,
+              "color": "#17b9a5"
+            },
+            {
+              "offset": 1,
+              "color": "#0b8f86"
+            }
+          ]
+        }
+      },
+      "reason": "青绿与蓝、橙同属既定饱和基准，用于区分外部单项，不引入新增主色"
+    },
+    {
+      "id": "group-collection",
+      "members": [
+        "frame-collection",
+        "node-09"
+      ],
+      "paint": {
+        "kind": "gradient",
+        "fill": "#ffffff",
+        "stroke": "#ffd27a",
+        "accent": "#f29200",
+        "foreground": "#12306b",
+        "header_gradient": {
+          "id": "gradient-orange",
+          "direction": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "stops": [
+            {
+              "offset": 0,
+              "color": "#ffb324"
+            },
+            {
+              "offset": 1,
+              "color": "#f08a00"
+            }
+          ]
+        }
+      },
+      "reason": "橙色为既定基准，用于第三类外部合集"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel-01",
+      "from": "frame-root",
+      "to": "frame-local",
+      "kind": "contains",
+      "condition": "索引收录",
+      "line_style": "style-contains",
+      "label_text": "text-cond-1",
+      "d": "M 335,350 L 335,440"
+    },
+    {
+      "id": "rel-02",
+      "from": "frame-root",
+      "to": "frame-external",
+      "kind": "contains",
+      "condition": "索引收录",
+      "line_style": "style-contains",
+      "label_text": "text-cond-2",
+      "d": "M 960,350 L 960,440"
+    },
+    {
+      "id": "rel-03",
+      "from": "frame-root",
+      "to": "frame-collection",
+      "kind": "contains",
+      "condition": "索引收录",
+      "line_style": "style-contains",
+      "label_text": "text-cond-3",
+      "d": "M 1585,350 L 1585,440"
+    },
+    {
+      "id": "rel-04",
+      "from": "node-01",
+      "to": "node-dir-req",
+      "kind": "source",
+      "condition": "源码在此",
+      "line_style": "style-source",
+      "label_text": "text-cond-4",
+      "d": "M 586,635 L 620,635 L 620,398 L 1313,398 L 1313,334"
+    },
+    {
+      "id": "rel-05",
+      "from": "node-02",
+      "to": "node-dir-svg",
+      "kind": "source",
+      "condition": "源码在此",
+      "line_style": "style-source",
+      "label_text": "text-cond-5",
+      "d": "M 586,861 L 624,861 L 624,428 L 1667,428 L 1667,334"
+    }
+  ],
+  "line_styles": [
+    {
+      "id": "style-contains",
+      "stroke": "#46618f",
+      "dasharray": "",
+      "meaning": "索引收录",
+      "legend_text": "text-legend-1",
+      "marker": "marker-contains"
+    },
+    {
+      "id": "style-source",
+      "stroke": "#7f8fab",
+      "dasharray": "8 6",
+      "meaning": "源码在此",
+      "legend_text": "text-legend-2",
+      "marker": "marker-source"
+    }
+  ],
+  "visible_elements": [
+    "diagram-background",
+    "text-title",
+    "text-subtitle",
+    "region-title",
+    "text-title-frame-root",
+    "use-icon-node-file-readme",
+    "text-name-node-file-readme",
+    "text-desc-node-file-readme",
+    "node-file-readme",
+    "use-icon-node-file-readme-en",
+    "text-name-node-file-readme-en",
+    "text-desc-node-file-readme-en",
+    "node-file-readme-en",
+    "use-icon-node-file-license",
+    "text-name-node-file-license",
+    "text-desc-node-file-license",
+    "node-file-license",
+    "use-icon-node-dir-req",
+    "text-name-node-dir-req",
+    "text-desc-node-dir-req",
+    "node-dir-req",
+    "use-icon-node-dir-svg",
+    "text-name-node-dir-svg",
+    "text-desc-node-dir-svg",
+    "node-dir-svg",
+    "frame-root",
+    "group-root",
+    "text-title-frame-local",
+    "text-name-node-01",
+    "text-desc-node-01",
+    "node-01",
+    "use-icon-node-02",
+    "text-name-node-02",
+    "text-desc-node-02",
+    "node-02",
+    "frame-local",
+    "group-local",
+    "text-title-frame-external",
+    "use-header-group-external",
+    "text-name-node-03",
+    "text-desc-node-03",
+    "node-03",
+    "text-name-node-04",
+    "text-desc-node-04",
+    "node-04",
+    "text-name-node-05",
+    "text-desc-node-05",
+    "node-05",
+    "text-name-node-06",
+    "text-desc-node-06",
+    "node-06",
+    "text-name-node-07",
+    "text-desc-node-07",
+    "node-07",
+    "text-name-node-08",
+    "text-desc-node-08",
+    "node-08",
+    "frame-external",
+    "group-external",
+    "text-title-frame-collection",
+    "use-icon-node-09",
+    "text-name-node-09",
+    "text-desc-node-09",
+    "node-09",
+    "frame-collection",
+    "group-collection",
+    "rel-01",
+    "rel-02",
+    "rel-03",
+    "rel-04",
+    "rel-05",
+    "text-cond-1",
+    "text-cond-2",
+    "text-cond-3",
+    "text-cond-4",
+    "text-cond-5",
+    "region-relations",
+    "text-legend-1",
+    "text-legend-2",
+    "text-note-1",
+    "text-note-2",
+    "region-legend"
+  ],
+  "assumptions": [
+    "使用环节取自 README 目录表第二列，为已有事实，不是推断的执行顺序",
+    "外部条目仅保留作者 / 维护者链接，不在本仓库存源码",
+    "image/ 为本次新增目录，只写进 README 图注，不画成节点",
+    "未读外部仓库源码，不补版本信息与上游内部实现",
+    "不画执行顺序箭头、并行拆分 / 汇合或反馈回路"
+  ],
+  "fallback": {
+    "allowed": true,
+    "description": "若单图同一可读性问题连续三次修订仍不通过，按已批准拆图方案拆为 image/repo-architecture-overview.svg 与 image/repo-architecture-skills.svg 两张，编号 ①–⑨ 与三组配色保持一致，冻结总内容不减"
+  }
+}

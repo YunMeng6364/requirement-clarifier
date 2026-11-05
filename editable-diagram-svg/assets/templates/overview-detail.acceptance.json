@@ -1,0 +1,775 @@
+{
+  "schema_version": 1,
+  "confirmation": {
+    "status": "simulated",
+    "evidence": "本包approved-content或模板演示设定的模拟提纲确认；不是真实用户授权。"
+  },
+  "diagram": {
+    "id": "diagram-main",
+    "filename": "overview-detail.svg",
+    "title": "阶段总览与局部机制模板",
+    "description": "虚构演示。提交到自动检查，通过进入人工审核，两种未通过都退回修改。审核通过发布交付；读者反馈触发新稿下一轮修订。",
+    "topology": "left-to-right",
+    "detail_level": "medium",
+    "viewBox": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+    ],
+    "width": 1920.0,
+    "height": 1080.0,
+    "display_width": 1600,
+    "background": {
+      "id": "element-001",
+      "gradient": {
+        "id": "background",
+        "stops": [
+          {
+            "offset": 0.0,
+            "color": "#f4f9ff"
+          },
+          {
+            "offset": 1.0,
+            "color": "#e9f2ff"
+          }
+        ],
+        "direction": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "defaults": {
+      "fill": "#26406e",
+      "stroke": "none",
+      "color": "#26406e"
+    }
+  },
+  "texts": [
+    {
+      "id": "text-001",
+      "value": "阶段总览与局部机制模板",
+      "region": "region-text-001",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-002",
+      "value": "布局模板 · 模块颜色、名称与编号在总览和详图中对应",
+      "region": "region-text-002",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-003",
+      "value": "参与入口",
+      "region": "region-text-003",
+      "fill": "#ffffff"
+    },
+    {
+      "id": "text-004",
+      "value": "网页提交",
+      "region": "region-text-004",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-005",
+      "value": "研究团队",
+      "region": "region-text-005",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-006",
+      "value": "检查助手",
+      "region": "region-text-006",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-007",
+      "value": "01  提交整理",
+      "region": "stage-001",
+      "fill": "#ffffff"
+    },
+    {
+      "id": "text-008",
+      "value": "整理内容与证据",
+      "region": "stage-001",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-009",
+      "value": "准备待审核文稿",
+      "region": "stage-001",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-010",
+      "value": "02  质量审核",
+      "region": "stage-002",
+      "fill": "#ffffff"
+    },
+    {
+      "id": "text-011",
+      "value": "自动检查与人工审核",
+      "region": "stage-002",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-012",
+      "value": "未通过则退回修改",
+      "region": "stage-002",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-013",
+      "value": "03  发布交付",
+      "region": "stage-003",
+      "fill": "#ffffff"
+    },
+    {
+      "id": "text-014",
+      "value": "发布版本并交付读者",
+      "region": "stage-003",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-015",
+      "value": "反馈启动下一轮修订",
+      "region": "stage-003",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-016",
+      "value": "局部机制 · 审核分支与反馈",
+      "region": "region-text-016",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-017",
+      "value": "实线：处理流转",
+      "region": "region-text-017",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-018",
+      "value": "虚线：反馈触发",
+      "region": "region-text-018",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-019",
+      "value": "通过",
+      "region": "region-text-019",
+      "fill": "#a2620a"
+    },
+    {
+      "id": "text-020",
+      "value": "通过",
+      "region": "region-text-020",
+      "fill": "#a2620a"
+    },
+    {
+      "id": "text-021",
+      "value": "检查未通过",
+      "region": "region-text-021",
+      "fill": "#a2620a"
+    },
+    {
+      "id": "text-022",
+      "value": "审核未通过",
+      "region": "region-text-022",
+      "fill": "#a2620a"
+    },
+    {
+      "id": "text-023",
+      "value": "修改后重新提交",
+      "region": "region-text-023",
+      "fill": "#0b8f86"
+    },
+    {
+      "id": "text-024",
+      "value": "读者反馈",
+      "region": "region-text-024",
+      "fill": "#5149e8"
+    },
+    {
+      "id": "text-025",
+      "value": "01",
+      "region": "node-004",
+      "fill": "#0b8f86"
+    },
+    {
+      "id": "text-026",
+      "value": "提交",
+      "region": "node-004",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-027",
+      "value": "整理内容与证据",
+      "region": "node-004",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-028",
+      "value": "02",
+      "region": "node-005",
+      "fill": "#a2620a"
+    },
+    {
+      "id": "text-029",
+      "value": "自动检查",
+      "region": "node-005",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-030",
+      "value": "格式与引用检查",
+      "region": "node-005",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-031",
+      "value": "02",
+      "region": "node-006",
+      "fill": "#a2620a"
+    },
+    {
+      "id": "text-032",
+      "value": "人工审核",
+      "region": "node-006",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-033",
+      "value": "评估依据与结论",
+      "region": "node-006",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-034",
+      "value": "退回修改",
+      "region": "node-009",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-035",
+      "value": "补充依据与修正文稿",
+      "region": "node-009",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-036",
+      "value": "03",
+      "region": "node-007",
+      "fill": "#2468ee"
+    },
+    {
+      "id": "text-037",
+      "value": "发布",
+      "region": "node-007",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-038",
+      "value": "形成已发布版本",
+      "region": "node-007",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-039",
+      "value": "03",
+      "region": "node-008",
+      "fill": "#2468ee"
+    },
+    {
+      "id": "text-040",
+      "value": "读者获取",
+      "region": "node-008",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-041",
+      "value": "按版本获取报告",
+      "region": "node-008",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-042",
+      "value": "下一轮修订",
+      "region": "node-010",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-043",
+      "value": "以新稿启动下一轮审核",
+      "region": "node-010",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-044",
+      "value": "边界：读者反馈触发新稿；不会直接修改已发布版本。",
+      "region": "region-text-044",
+      "fill": "#46618f"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "stage-001",
+      "group": "group-001",
+      "title_text": "text-007"
+    },
+    {
+      "id": "stage-002",
+      "group": "group-002",
+      "title_text": "text-010"
+    },
+    {
+      "id": "stage-003",
+      "group": "group-003",
+      "title_text": "text-013"
+    },
+    {
+      "id": "node-004",
+      "group": "group-004",
+      "title_text": "text-026"
+    },
+    {
+      "id": "node-005",
+      "group": "group-005",
+      "title_text": "text-029"
+    },
+    {
+      "id": "node-006",
+      "group": "group-005",
+      "title_text": "text-032"
+    },
+    {
+      "id": "node-007",
+      "group": "group-006",
+      "title_text": "text-037"
+    },
+    {
+      "id": "node-008",
+      "group": "group-006",
+      "title_text": "text-040"
+    },
+    {
+      "id": "node-009",
+      "group": "group-005",
+      "title_text": "text-034"
+    },
+    {
+      "id": "node-010",
+      "group": "group-007",
+      "title_text": "text-042"
+    }
+  ],
+  "groups": [
+    {
+      "id": "group-001",
+      "members": [
+        "stage-001"
+      ],
+      "paint": {
+        "kind": "gradient",
+        "fill": "#ffffff",
+        "stroke": "#8fe0d5",
+        "accent": "#ffffff",
+        "foreground": "#ffffff",
+        "header_gradient": {
+          "id": "gradient-teal",
+          "stops": [
+            {
+              "offset": 0.0,
+              "color": "#17b9a5"
+            },
+            {
+              "offset": 1.0,
+              "color": "#0b8f86"
+            }
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "reason": "本演示沿用该组视觉区分；仅本图与详图一致，不建立跨业务职责映射。"
+    },
+    {
+      "id": "group-002",
+      "members": [
+        "stage-002"
+      ],
+      "paint": {
+        "kind": "gradient",
+        "fill": "#ffffff",
+        "stroke": "#ffd27a",
+        "accent": "#ffffff",
+        "foreground": "#ffffff",
+        "header_gradient": {
+          "id": "gradient-orange",
+          "stops": [
+            {
+              "offset": 0.0,
+              "color": "#ffb324"
+            },
+            {
+              "offset": 1.0,
+              "color": "#f08a00"
+            }
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "reason": "本演示沿用该组视觉区分；仅本图与详图一致，不建立跨业务职责映射。"
+    },
+    {
+      "id": "group-003",
+      "members": [
+        "stage-003"
+      ],
+      "paint": {
+        "kind": "gradient",
+        "fill": "#ffffff",
+        "stroke": "#8db8ff",
+        "accent": "#ffffff",
+        "foreground": "#ffffff",
+        "header_gradient": {
+          "id": "gradient-blue",
+          "stops": [
+            {
+              "offset": 0.0,
+              "color": "#3b8bff"
+            },
+            {
+              "offset": 1.0,
+              "color": "#1b57e0"
+            }
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "reason": "本演示沿用该组视觉区分；仅本图与详图一致，不建立跨业务职责映射。"
+    },
+    {
+      "id": "group-004",
+      "members": [
+        "node-004"
+      ],
+      "paint": {
+        "kind": "solid",
+        "fill": "#ffffff",
+        "stroke": "#8fe0d5",
+        "accent": "#0b8f86",
+        "foreground": "#1c2b4a"
+      },
+      "reason": "本演示沿用该组视觉区分；仅本图与详图一致，不建立跨业务职责映射。"
+    },
+    {
+      "id": "group-005",
+      "members": [
+        "node-005",
+        "node-006",
+        "node-009"
+      ],
+      "paint": {
+        "kind": "solid",
+        "fill": "#ffffff",
+        "stroke": "#ffd27a",
+        "accent": "#a2620a",
+        "foreground": "#1c2b4a"
+      },
+      "reason": "本演示沿用该组视觉区分；仅本图与详图一致，不建立跨业务职责映射。"
+    },
+    {
+      "id": "group-006",
+      "members": [
+        "node-007",
+        "node-008"
+      ],
+      "paint": {
+        "kind": "solid",
+        "fill": "#ffffff",
+        "stroke": "#8db8ff",
+        "accent": "#2468ee",
+        "foreground": "#1c2b4a"
+      },
+      "reason": "本演示沿用该组视觉区分；仅本图与详图一致，不建立跨业务职责映射。"
+    },
+    {
+      "id": "group-007",
+      "members": [
+        "node-010"
+      ],
+      "paint": {
+        "kind": "solid",
+        "fill": "#ffffff",
+        "stroke": "#b7bfff",
+        "accent": "#5149e8",
+        "foreground": "#1c2b4a"
+      },
+      "reason": "本演示沿用该组视觉区分；仅本图与详图一致，不建立跨业务职责映射。"
+    }
+  ],
+  "relations": [
+    {
+      "id": "element-019",
+      "from": "stage-001",
+      "to": "stage-002",
+      "kind": "data-flow",
+      "condition": "",
+      "line_style": "line-style-001",
+      "label_text": null
+    },
+    {
+      "id": "element-020",
+      "from": "stage-002",
+      "to": "stage-003",
+      "kind": "data-flow",
+      "condition": "",
+      "line_style": "line-style-002",
+      "label_text": null
+    },
+    {
+      "id": "element-024",
+      "from": "node-004",
+      "to": "node-005",
+      "kind": "data-flow",
+      "condition": "",
+      "line_style": "line-style-003",
+      "label_text": null
+    },
+    {
+      "id": "element-025",
+      "from": "node-005",
+      "to": "node-006",
+      "kind": "data-flow",
+      "condition": "通过",
+      "line_style": "line-style-001",
+      "label_text": "text-019"
+    },
+    {
+      "id": "element-026",
+      "from": "node-006",
+      "to": "node-007",
+      "kind": "data-flow",
+      "condition": "通过",
+      "line_style": "line-style-001",
+      "label_text": "text-020"
+    },
+    {
+      "id": "element-027",
+      "from": "node-007",
+      "to": "node-008",
+      "kind": "data-flow",
+      "condition": "",
+      "line_style": "line-style-002",
+      "label_text": null
+    },
+    {
+      "id": "element-028",
+      "from": "node-005",
+      "to": "node-009",
+      "kind": "data-flow",
+      "condition": "检查未通过",
+      "line_style": "line-style-001",
+      "label_text": "text-021"
+    },
+    {
+      "id": "element-029",
+      "from": "node-006",
+      "to": "node-009",
+      "kind": "data-flow",
+      "condition": "审核未通过",
+      "line_style": "line-style-001",
+      "label_text": "text-022"
+    },
+    {
+      "id": "element-030",
+      "from": "node-009",
+      "to": "node-004",
+      "kind": "data-flow",
+      "condition": "修改后重新提交",
+      "line_style": "line-style-003",
+      "label_text": "text-023"
+    },
+    {
+      "id": "element-031",
+      "from": "node-008",
+      "to": "node-010",
+      "kind": "feedback",
+      "condition": "读者反馈",
+      "line_style": "line-style-004",
+      "label_text": "text-024"
+    },
+    {
+      "id": "element-032",
+      "from": "node-010",
+      "to": "node-004",
+      "kind": "feedback",
+      "condition": "",
+      "line_style": "line-style-004",
+      "label_text": null
+    }
+  ],
+  "line_styles": [
+    {
+      "id": "line-style-001",
+      "stroke": "#a2620a",
+      "dasharray": "",
+      "meaning": "处理流转",
+      "legend_text": "text-017",
+      "marker": "arrow-orange"
+    },
+    {
+      "id": "line-style-002",
+      "stroke": "#2468ee",
+      "dasharray": "",
+      "meaning": "处理流转",
+      "legend_text": "text-017",
+      "marker": "arrow-blue"
+    },
+    {
+      "id": "line-style-003",
+      "stroke": "#0b8f86",
+      "dasharray": "",
+      "meaning": "处理流转",
+      "legend_text": "text-017",
+      "marker": "arrow-teal"
+    },
+    {
+      "id": "line-style-004",
+      "stroke": "#5149e8",
+      "dasharray": "9 7",
+      "meaning": "反馈触发",
+      "legend_text": "text-018",
+      "marker": "arrow-purple"
+    }
+  ],
+  "visible_elements": [
+    "element-001",
+    "text-001",
+    "text-002",
+    "element-002",
+    "element-003",
+    "text-003",
+    "element-004",
+    "text-004",
+    "element-005",
+    "text-005",
+    "element-006",
+    "text-006",
+    "group-001",
+    "stage-001",
+    "element-007",
+    "element-008",
+    "element-009",
+    "element-010",
+    "text-007",
+    "text-008",
+    "text-009",
+    "group-002",
+    "stage-002",
+    "element-011",
+    "element-012",
+    "element-013",
+    "element-014",
+    "text-010",
+    "text-011",
+    "text-012",
+    "group-003",
+    "stage-003",
+    "element-015",
+    "element-016",
+    "element-017",
+    "element-018",
+    "text-013",
+    "text-014",
+    "text-015",
+    "element-019",
+    "element-020",
+    "text-016",
+    "element-021",
+    "text-017",
+    "element-022",
+    "text-018",
+    "element-023",
+    "element-024",
+    "element-025",
+    "text-019",
+    "element-026",
+    "text-020",
+    "element-027",
+    "element-028",
+    "text-021",
+    "element-029",
+    "text-022",
+    "element-030",
+    "text-023",
+    "element-031",
+    "text-024",
+    "element-032",
+    "group-004",
+    "node-004",
+    "element-033",
+    "text-025",
+    "text-026",
+    "text-027",
+    "group-005",
+    "node-005",
+    "element-034",
+    "text-028",
+    "text-029",
+    "text-030",
+    "node-006",
+    "element-035",
+    "text-031",
+    "text-032",
+    "text-033",
+    "node-009",
+    "element-036",
+    "element-037",
+    "text-034",
+    "text-035",
+    "group-006",
+    "node-007",
+    "element-038",
+    "text-036",
+    "text-037",
+    "text-038",
+    "node-008",
+    "element-039",
+    "text-039",
+    "text-040",
+    "text-041",
+    "group-007",
+    "node-010",
+    "element-040",
+    "element-041",
+    "text-042",
+    "text-043",
+    "text-044"
+  ],
+  "assumptions": [
+    "全部内容为该示例给定的虚构或模板演示设定；不代表真实产品能力。"
+  ],
+  "fallback": {
+    "allowed": false,
+    "description": "改变内容、取色或图数须先确认；仅进行保持内容的几何修复。"
+  }
+}

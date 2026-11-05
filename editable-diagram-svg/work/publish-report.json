@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "stage": "publish",
+  "status": "通过",
+  "ok": true,
+  "svg_path": "D:\\GitHub\\requirement-clarifier\\editable-diagram-svg\\work\\candidate.svg",
+  "svg_sha256": "f810e706dd1eaace804677f92c6e879d70e4cec086cf12bd45e4a4bf01d83245",
+  "acceptance_sha256": "2c6cd644863510bb73277b57dddb155c5e86dab4cb1a2f1b7db3c676a853bb1f",
+  "palette_sha256": "1d96561cb1848cbfc47559bd9d43f9ea33be0cd0cfae946120539c98afeed2d7",
+  "checks": {
+    "confirmation": true,
+    "candidate_recheck": true,
+    "static_evidence": true,
+    "render_acceptance": true,
+    "visual_review": true,
+    "current_inputs": true,
+    "atomic_write": true
+  },
+  "results": [
+    {
+      "key": "confirmation",
+      "status": "通过",
+      "reason": "Mode: approved",
+      "evidence": null,
+      "required": true
+    },
+    {
+      "key": "candidate_recheck",
+      "status": "通过",
+      "reason": "Current complete candidate validated in memory",
+      "evidence": null,
+      "required": true
+    },
+    {
+      "key": "static_evidence",
+      "status": "通过",
+      "reason": "Current static evidence hashes match",
+      "evidence": null,
+      "required": true
+    },
+    {
+      "key": "render_acceptance",
+      "status": "通过",
+      "reason": "Actual fresh PNG, size and render evidence checked",
+      "evidence": "D:\\GitHub\\requirement-clarifier\\editable-diagram-svg\\work\\render-report.json",
+      "required": true
+    },
+    {
+      "key": "visual_review",
+      "status": "通过",
+      "reason": "Separate actual agent review matches the current PNG",
+      "evidence": "D:\\GitHub\\requirement-clarifier\\editable-diagram-svg\\work\\visual-review.json",
+      "required": true
+    },
+    {
+      "key": "current_inputs",
+      "status": "通过",
+      "reason": "Inputs unchanged throughout verification",
+      "evidence": null,
+      "required": true
+    },
+    {
+      "key": "atomic_write",
+      "status": "通过",
+      "reason": "Complete candidate saved with same-directory fsync and atomic replace",
+      "evidence": null,
+      "required": true
+    }
+  ],
+  "limitations": [
+    "Evidence is agent-provided; hash linkage does not authenticate a human approval or visual review."
+  ],
+  "output_path": "D:\\GitHub\\requirement-clarifier\\image\\repo-architecture.svg",
+  "written": true,
+  "final_acceptance": true,
+  "exit_code": 0
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "stage": "render",
+  "status": "通过",
+  "ok": true,
+  "svg_path": "d:/GitHub/requirement-clarifier/editable-diagram-svg/work/candidate.svg",
+  "svg_sha256": "f810e706dd1eaace804677f92c6e879d70e4cec086cf12bd45e4a4bf01d83245",
+  "acceptance_sha256": "2c6cd644863510bb73277b57dddb155c5e86dab4cb1a2f1b7db3c676a853bb1f",
+  "palette_sha256": "1d96561cb1848cbfc47559bd9d43f9ea33be0cd0cfae946120539c98afeed2d7",
+  "png_sha256": "38035528f01e40cc9b648cc37df1171d74c0054ebef0b619c1c645ed1b98bf18",
+  "png_path": "d:/GitHub/requirement-clarifier/editable-diagram-svg/work/preview.png",
+  "preview": {
+    "width": 1600,
+    "height": 900
+  },
+  "reviewed_at": "2026-11-05T08:22:50.339Z",
+  "tool": "Google Chrome headless (chrome.exe --headless --screenshot) via preview.html wrapper at frozen display_width",
+  "command": "chrome.exe --headless --disable-gpu --hide-scrollbars --no-first-run --user-data-dir=<work>/chrome-profile --window-size=1600,900 --screenshot=<work>/preview.png file:///D:/GitHub/requirement-clarifier/editable-diagram-svg/work/preview.html",
+  "checks": {
+    "renderer": true,
+    "fresh_png": true,
+    "preview_size": true,
+    "hash_linkage": true,
+    "visual_target": true
+  },
+  "results": [
+    {
+      "key": "renderer",
+      "status": "通过",
+      "reason": "Chrome headless 已核实可用，本次成功生成 PNG",
+      "evidence": null,
+      "required": true
+    },
+    {
+      "key": "fresh_png",
+      "status": "通过",
+      "reason": "按当前 candidate.svg 重新渲染，PNG 238583 字节，未复用旧预览",
+      "evidence": null,
+      "required": true
+    },
+    {
+      "key": "preview_size",
+      "status": "通过",
+      "reason": "PNG 实际尺寸 1600x900，与冻结展示宽 1600 的 16:9 一致",
+      "evidence": null,
+      "required": true
+    },
+    {
+      "key": "hash_linkage",
+      "status": "通过",
+      "reason": "SVG / acceptance / palette 哈希与静态冻结报告一致",
+      "evidence": null,
+      "required": true
+    },
+    {
+      "key": "visual_target",
+      "status": "通过",
+      "reason": "按目标展示宽渲染全图，非缩略图或局部裁切",
+      "evidence": null,
+      "required": true
+    },
+    {
+      "key": "render_svg.cjs",
+      "status": "未执行",
+      "reason": "当前环境缺 Playwright Node 包，官方 render_svg.cjs 未使用；改用已核实的 Chrome headless 等价渲染，工具与命令已如实记录",
+      "evidence": null,
+      "required": false
+    }
+  ],
+  "limitations": [
+    "render_svg.cjs 未使用（缺 Playwright Node 包）；渲染证据来自已核实的 Chrome headless 本地渲染器",
+    "证据由 Agent 提供；哈希链不证明人工审批或人工目视"
+  ]
+}

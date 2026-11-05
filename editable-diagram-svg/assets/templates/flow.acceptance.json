@@ -1,0 +1,462 @@
+{
+  "schema_version": 1,
+  "confirmation": {
+    "status": "simulated",
+    "evidence": "本包approved-content或模板演示设定的模拟提纲确认；不是真实用户授权。"
+  },
+  "diagram": {
+    "id": "diagram-main",
+    "filename": "flow.svg",
+    "title": "横向流程模板 · 判断、分支与反馈",
+    "description": "布局示意；所有状态、判断条件和反馈目标需要按实际材料重新确认。",
+    "topology": "left-to-right",
+    "detail_level": "medium",
+    "viewBox": [
+      0.0,
+      0.0,
+      1920.0,
+      1080.0
+    ],
+    "width": 1920.0,
+    "height": 1080.0,
+    "display_width": 1600,
+    "background": {
+      "id": "element-001",
+      "gradient": {
+        "id": "background",
+        "stops": [
+          {
+            "offset": 0.0,
+            "color": "#f4f9ff"
+          },
+          {
+            "offset": 1.0,
+            "color": "#e9f2ff"
+          }
+        ],
+        "direction": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "defaults": {
+      "fill": "#26406e",
+      "stroke": "none",
+      "color": "#26406e"
+    }
+  },
+  "texts": [
+    {
+      "id": "text-001",
+      "value": "横向流程模板 · 判断、分支与反馈",
+      "region": "region-text-001",
+      "fill": "#12306b"
+    },
+    {
+      "id": "text-002",
+      "value": "模板示意 · 位置由关系决定 · 实线为处理，虚线为反馈",
+      "region": "region-text-002",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-003",
+      "value": "使用入口",
+      "region": "region-text-003",
+      "fill": "#ffffff"
+    },
+    {
+      "id": "text-004",
+      "value": "网页端",
+      "region": "region-text-004",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-005",
+      "value": "操作团队",
+      "region": "region-text-005",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-006",
+      "value": "自动助手",
+      "region": "region-text-006",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-007",
+      "value": "主流程与分支",
+      "region": "region-text-007",
+      "fill": "#ffffff"
+    },
+    {
+      "id": "text-008",
+      "value": "条件满足",
+      "region": "region-text-008",
+      "fill": "#a2620a"
+    },
+    {
+      "id": "text-009",
+      "value": "条件不满足",
+      "region": "region-text-009",
+      "fill": "#a2620a"
+    },
+    {
+      "id": "text-010",
+      "value": "补充后重试",
+      "region": "region-text-010",
+      "fill": "#0b8f86"
+    },
+    {
+      "id": "text-011",
+      "value": "反馈",
+      "region": "region-text-011",
+      "fill": "#5149e8"
+    },
+    {
+      "id": "text-012",
+      "value": "01",
+      "region": "node-001",
+      "fill": "#0b8f86"
+    },
+    {
+      "id": "text-013",
+      "value": "输入对象",
+      "region": "node-001",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-014",
+      "value": "材料与依据",
+      "region": "node-001",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-015",
+      "value": "02",
+      "region": "node-002",
+      "fill": "#a2620a"
+    },
+    {
+      "id": "text-016",
+      "value": "判断或审核",
+      "region": "node-002",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-017",
+      "value": "写明条件与依据",
+      "region": "node-002",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-018",
+      "value": "03",
+      "region": "node-003",
+      "fill": "#2468ee"
+    },
+    {
+      "id": "text-019",
+      "value": "确认结果",
+      "region": "node-003",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-020",
+      "value": "满足条件后流转",
+      "region": "node-003",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-021",
+      "value": "04",
+      "region": "node-004",
+      "fill": "#2468ee"
+    },
+    {
+      "id": "text-022",
+      "value": "交付使用",
+      "region": "node-004",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-023",
+      "value": "保留版本边界",
+      "region": "node-004",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-024",
+      "value": "修订或补充",
+      "region": "node-005",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-025",
+      "value": "明确重试入口",
+      "region": "node-005",
+      "fill": "#1c2b4a"
+    },
+    {
+      "id": "text-026",
+      "value": "按材料重绘关系；模板中的演示节点与分支不是新项目的业务事实。",
+      "region": "region-text-026",
+      "fill": "#46618f"
+    },
+    {
+      "id": "text-027",
+      "value": "复杂内容：保留主流程；将并行子流程或局部机制拆成独立详图。",
+      "region": "region-text-027",
+      "fill": "#26406e"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "node-001",
+      "group": "group-001",
+      "title_text": "text-013"
+    },
+    {
+      "id": "node-002",
+      "group": "group-002",
+      "title_text": "text-016"
+    },
+    {
+      "id": "node-003",
+      "group": "group-003",
+      "title_text": "text-019"
+    },
+    {
+      "id": "node-004",
+      "group": "group-003",
+      "title_text": "text-022"
+    },
+    {
+      "id": "node-005",
+      "group": "group-004",
+      "title_text": "text-024"
+    }
+  ],
+  "groups": [
+    {
+      "id": "group-001",
+      "members": [
+        "node-001"
+      ],
+      "paint": {
+        "kind": "solid",
+        "fill": "#ffffff",
+        "stroke": "#8fe0d5",
+        "accent": "#0b8f86",
+        "foreground": "#1c2b4a"
+      },
+      "reason": "本演示沿用该组视觉区分；仅本图与详图一致，不建立跨业务职责映射。"
+    },
+    {
+      "id": "group-002",
+      "members": [
+        "node-002"
+      ],
+      "paint": {
+        "kind": "solid",
+        "fill": "#ffffff",
+        "stroke": "#ffd27a",
+        "accent": "#a2620a",
+        "foreground": "#1c2b4a"
+      },
+      "reason": "本演示沿用该组视觉区分；仅本图与详图一致，不建立跨业务职责映射。"
+    },
+    {
+      "id": "group-003",
+      "members": [
+        "node-003",
+        "node-004"
+      ],
+      "paint": {
+        "kind": "solid",
+        "fill": "#ffffff",
+        "stroke": "#8db8ff",
+        "accent": "#2468ee",
+        "foreground": "#1c2b4a"
+      },
+      "reason": "本演示沿用该组视觉区分；仅本图与详图一致，不建立跨业务职责映射。"
+    },
+    {
+      "id": "group-004",
+      "members": [
+        "node-005"
+      ],
+      "paint": {
+        "kind": "solid",
+        "fill": "#ffffff",
+        "stroke": "#b7bfff",
+        "accent": "#5149e8",
+        "foreground": "#1c2b4a"
+      },
+      "reason": "本演示沿用该组视觉区分；仅本图与详图一致，不建立跨业务职责映射。"
+    }
+  ],
+  "relations": [
+    {
+      "id": "element-011",
+      "from": "node-001",
+      "to": "node-002",
+      "kind": "data-flow",
+      "condition": "",
+      "line_style": "line-style-001",
+      "label_text": null
+    },
+    {
+      "id": "element-012",
+      "from": "node-002",
+      "to": "node-003",
+      "kind": "data-flow",
+      "condition": "条件满足",
+      "line_style": "line-style-002",
+      "label_text": "text-008"
+    },
+    {
+      "id": "element-013",
+      "from": "node-003",
+      "to": "node-004",
+      "kind": "data-flow",
+      "condition": "",
+      "line_style": "line-style-003",
+      "label_text": null
+    },
+    {
+      "id": "element-014",
+      "from": "node-002",
+      "to": "node-005",
+      "kind": "data-flow",
+      "condition": "条件不满足",
+      "line_style": "line-style-002",
+      "label_text": "text-009"
+    },
+    {
+      "id": "element-015",
+      "from": "node-005",
+      "to": "node-001",
+      "kind": "data-flow",
+      "condition": "补充后重试",
+      "line_style": "line-style-001",
+      "label_text": "text-010"
+    },
+    {
+      "id": "element-016",
+      "from": "node-004",
+      "to": "node-005",
+      "kind": "feedback",
+      "condition": "反馈",
+      "line_style": "line-style-004",
+      "label_text": "text-011"
+    }
+  ],
+  "line_styles": [
+    {
+      "id": "line-style-001",
+      "stroke": "#0b8f86",
+      "dasharray": "",
+      "meaning": "处理",
+      "legend_text": "text-002",
+      "marker": "arrow-teal"
+    },
+    {
+      "id": "line-style-002",
+      "stroke": "#a2620a",
+      "dasharray": "",
+      "meaning": "处理",
+      "legend_text": "text-002",
+      "marker": "arrow-orange"
+    },
+    {
+      "id": "line-style-003",
+      "stroke": "#2468ee",
+      "dasharray": "",
+      "meaning": "处理",
+      "legend_text": "text-002",
+      "marker": "arrow-blue"
+    },
+    {
+      "id": "line-style-004",
+      "stroke": "#5149e8",
+      "dasharray": "9 7",
+      "meaning": "反馈",
+      "legend_text": "text-002",
+      "marker": "arrow-purple"
+    }
+  ],
+  "visible_elements": [
+    "element-001",
+    "text-001",
+    "text-002",
+    "element-002",
+    "element-003",
+    "text-003",
+    "element-004",
+    "text-004",
+    "element-005",
+    "text-005",
+    "element-006",
+    "text-006",
+    "element-007",
+    "element-008",
+    "element-009",
+    "element-010",
+    "text-007",
+    "element-011",
+    "element-012",
+    "text-008",
+    "element-013",
+    "element-014",
+    "text-009",
+    "element-015",
+    "text-010",
+    "element-016",
+    "text-011",
+    "group-001",
+    "node-001",
+    "element-017",
+    "element-018",
+    "text-012",
+    "text-013",
+    "text-014",
+    "group-002",
+    "node-002",
+    "element-019",
+    "element-020",
+    "text-015",
+    "text-016",
+    "text-017",
+    "group-003",
+    "node-003",
+    "element-021",
+    "element-022",
+    "text-018",
+    "text-019",
+    "text-020",
+    "node-004",
+    "element-023",
+    "element-024",
+    "text-021",
+    "text-022",
+    "text-023",
+    "group-004",
+    "node-005",
+    "element-025",
+    "element-026",
+    "text-024",
+    "text-025",
+    "text-026",
+    "text-027"
+  ],
+  "assumptions": [
+    "全部内容为该示例给定的虚构或模板演示设定；不代表真实产品能力。"
+  ],
+  "fallback": {
+    "allowed": false,
+    "description": "改变内容、取色或图数须先确认；仅进行保持内容的几何修复。"
+  }
+}

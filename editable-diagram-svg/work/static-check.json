@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "stage": "static",
+  "status": "通过",
+  "ok": true,
+  "svg_path": "D:\\GitHub\\requirement-clarifier\\editable-diagram-svg\\work\\candidate.svg",
+  "svg_sha256": "f810e706dd1eaace804677f92c6e879d70e4cec086cf12bd45e4a4bf01d83245",
+  "acceptance_sha256": "2c6cd644863510bb73277b57dddb155c5e86dab4cb1a2f1b7db3c676a853bb1f",
+  "palette_sha256": "1d96561cb1848cbfc47559bd9d43f9ea33be0cd0cfae946120539c98afeed2d7",
+  "checks": {
+    "palette_config": true,
+    "acceptance_schema": true,
+    "no_dtd_entities": true,
+    "no_stylesheet_processing_instruction": true,
+    "parseable_xml": true,
+    "svg_root": true,
+    "svg_elements_only": true,
+    "width": true,
+    "height": true,
+    "viewBox": true,
+    "unique_ids": true,
+    "internal_references": true,
+    "self_contained_resources": true,
+    "no_active_or_foreign_content": true,
+    "vector_only": true,
+    "css_subset": true,
+    "accessible_description": true,
+    "palette_colors": true,
+    "opacity_values": true,
+    "editable_text": true,
+    "expected_text": true,
+    "frozen_diagram": true,
+    "frozen_text": true,
+    "text_regions": true,
+    "visible_registration": true,
+    "frozen_objects": true,
+    "frozen_relations": true,
+    "approved_paint_mapping": true,
+    "frozen_acceptance": true
+  },
+  "results": [
+    {
+      "key": "palette_config",
+      "status": "通过",
+      "reason": "",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "acceptance_schema",
+      "status": "通过",
+      "reason": "",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "no_dtd_entities",
+      "status": "通过",
+      "reason": "",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "no_stylesheet_processing_instruction",
+      "status": "通过",
+      "reason": "Stylesheet processing instructions are forbidden.",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "parseable_xml",
+      "status": "通过",
+      "reason": "",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "svg_root",
+      "status": "通过",
+      "reason": "Root must be SVG in the SVG namespace.",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "svg_elements_only",
+      "status": "通过",
+      "reason": "Foreign namespace elements are outside the editable SVG subset.",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "width",
+      "status": "通过",
+      "reason": "width must be an explicit positive length.",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "height",
+      "status": "通过",
+      "reason": "height must be an explicit positive length.",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "viewBox",
+      "status": "通过",
+      "reason": "viewBox requires four finite numbers and positive area.",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "unique_ids",
+      "status": "通过",
+      "reason": "Empty/duplicate IDs: []",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "internal_references",
+      "status": "通过",
+      "reason": "Missing IDs: []",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "self_contained_resources",
+      "status": "通过",
+      "reason": "External or malformed resources: []",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "no_active_or_foreign_content",
+      "status": "通过",
+      "reason": "Forbidden SVG content: []",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "vector_only",
+      "status": "通过",
+      "reason": "All image elements are forbidden.",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "css_subset",
+      "status": "通过",
+      "reason": "",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "accessible_description",
+      "status": "通过",
+      "reason": "One nonempty title/desc and aria-labelledby are required.",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "palette_colors",
+      "status": "通过",
+      "reason": "",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "opacity_values",
+      "status": "通过",
+      "reason": "Invalid opacity: []",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "editable_text",
+      "status": "通过",
+      "reason": "Nonempty visible editable text is required.",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "expected_text",
+      "status": "通过",
+      "reason": "Missing expected text: []",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "frozen_diagram",
+      "status": "通过",
+      "reason": "",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "frozen_text",
+      "status": "通过",
+      "reason": "",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "text_regions",
+      "status": "通过",
+      "reason": "",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "visible_registration",
+      "status": "通过",
+      "reason": "",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "frozen_objects",
+      "status": "通过",
+      "reason": "",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "frozen_relations",
+      "status": "通过",
+      "reason": "",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "approved_paint_mapping",
+      "status": "通过",
+      "reason": "",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "frozen_acceptance",
+      "status": "通过",
+      "reason": "All frozen object/text/paint/relationship checks must pass.",
+      "evidence": [],
+      "required": true
+    },
+    {
+      "key": "visual_review",
+      "status": "未执行",
+      "reason": "Actual rendering and human/agent visual review are separate required delivery stages.",
+      "evidence": [],
+      "required": false
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Static checks do not prove glyphs, overlap, actual arrow targets, content truth or visual quality."
+  ],
+  "production_ready": true,
+  "exit_code": 0,
+  "visible_text_count": 43,
+  "expected_text_count": 0,
+  "file": "work\\candidate.svg"
+}
