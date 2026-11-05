@@ -1,0 +1,380 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1920" viewBox="0 0 1680 1920" role="img" aria-labelledby="diagram-title diagram-description" id="diagram-main" fill="#26406e" stroke="none" color="#26406e" data-topology="nested" data-detail-level="medium">
+<title id="diagram-title">SkillHub 管理平台 · 优化融合版系统架构</title>
+<desc id="diagram-description">企业级 AI Agent 技能资产统一管理与分发平台 · 8大核心能力域与分阶段演进融合架构</desc>
+<defs>
+<style>text{font-family:"Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "Source Han Sans SC", Arial, sans-serif}</style>
+<linearGradient id="background" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f9ff" /><stop offset="1" stop-color="#e9f2ff" /></linearGradient>
+<linearGradient id="gradient-blue" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3b8bff" /><stop offset="1" stop-color="#1b57e0" /></linearGradient>
+<linearGradient id="gradient-teal" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#17b9a5" /><stop offset="1" stop-color="#0b8f86" /></linearGradient>
+<linearGradient id="gradient-orange" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffb324" /><stop offset="1" stop-color="#f08a00" /></linearGradient>
+<linearGradient id="gradient-purple" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#727bff" /><stop offset="1" stop-color="#5149e8" /></linearGradient>
+<linearGradient id="gradient-infra" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e8eef8" /><stop offset="1" stop-color="#cfd9ea" /></linearGradient>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="145%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#2864dc" flood-opacity="0.12" /></filter>
+<marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L8,5 L1,9 Z" fill="#2468ee" stroke="none" /></marker>
+<marker id="arrow-teal" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L8,5 L1,9 Z" fill="#0b8f86" stroke="none" /></marker>
+<marker id="arrow-orange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L8,5 L1,9 Z" fill="#a2620a" stroke="none" /></marker>
+<marker id="arrow-purple" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L8,5 L1,9 Z" fill="#5149e8" stroke="none" /></marker>
+<marker id="arrow-infra" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L8,5 L1,9 Z" fill="#46618f" stroke="none" /></marker>
+    <symbol id="icon-web" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2.5" y="3" width="19" height="14" rx="2.5" fill="currentColor" fill-opacity=".12" />
+        <path d="M2.5 7.5h19M12 17v4M8 21h8" />
+        <circle cx="5.5" cy="5.3" r=".7" fill="currentColor" stroke="none" /><circle cx="8.5" cy="5.3" r=".7" fill="currentColor" stroke="none" />
+        <path d="m8 11 2 2-2 2m5 0h3" />
+      </g>
+    </symbol>
+    <symbol id="icon-terminal" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2.5" y="4" width="19" height="16" rx="3" fill="currentColor" fill-opacity=".12" />
+        <path d="m6 9 3 3-3 3m6 1h5" />
+      </g>
+    </symbol>
+    <symbol id="icon-robot" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="4.5" y="7" width="15" height="13" rx="4" fill="currentColor" fill-opacity=".16" />
+        <path d="M12 4v3M2 11v5m20-5v5" />
+        <circle cx="12" cy="2.8" r="1.1" fill="currentColor" />
+        <circle cx="8.5" cy="12" r="1.1" fill="currentColor" stroke="none" />
+        <circle cx="15.5" cy="12" r="1.1" fill="currentColor" stroke="none" />
+        <path d="M9 16q3 2 6 0" />
+      </g>
+    </symbol>
+    <symbol id="icon-team" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="7" r="3" fill="currentColor" fill-opacity=".16" />
+        <path d="M6 20v-2a6 6 0 0 1 12 0v2Z" fill="currentColor" fill-opacity=".12" />
+        <path d="M4 5.5a2.5 2.5 0 0 1 0 5m-2 8v-2a4 4 0 0 1 3-4m15-7a2.5 2.5 0 0 0 0 5m2 8v-2a4 4 0 0 0-3-4" />
+      </g>
+    </symbol>
+    <symbol id="icon-puzzle" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 9V4h5a3 3 0 1 1 6 0h5v5a3 3 0 1 0 0 6v5h-5a3 3 0 1 0-6 0H4v-5a3 3 0 1 0 0-6Z" fill="currentColor" fill-opacity=".14" />
+      </g>
+    </symbol>
+    <symbol id="icon-package" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m12 2 9 5v10l-9 5-9-5V7Z" fill="currentColor" fill-opacity=".12" />
+        <path d="m3 7 9 5 9-5M12 12v10M7.5 4.5l9 5V14" />
+      </g>
+    </symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m12 2 8.5 3.5V12c0 4.5-3.5 7.5-8.5 10-5-2.5-8.5-5.5-8.5-10V5.5Z" fill="currentColor" fill-opacity=".14" />
+        <path d="m7.5 11.5 3 3 6-6" />
+      </g>
+    </symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="10" cy="10" r="7" fill="currentColor" fill-opacity=".12" />
+        <path d="m15 15 6 6M7 7q3-2 5 0" />
+      </g>
+    </symbol>
+    <symbol id="icon-database" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 6v12c0 5.3 18 5.3 18 0V6" fill="currentColor" fill-opacity=".12" />
+        <ellipse cx="12" cy="6" rx="9" ry="4" />
+        <path d="M3 12c0 5.3 18 5.3 18 0M3 18c0 5.3 18 5.3 18 0" />
+      </g>
+    </symbol>
+    <symbol id="icon-cloud" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 19a4.5 4.5 0 0 1-1-8.9A7 7 0 0 1 18.4 9a5 5 0 0 1-.4 10Z" fill="currentColor" fill-opacity=".14" />
+        <path d="M12 19v-7m-3 3 3-3 3 3" />
+      </g>
+    </symbol>
+    <symbol id="icon-queue" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="18" height="18" rx="3" fill="currentColor" fill-opacity=".12" />
+        <circle cx="6.7" cy="7" r=".8" fill="currentColor" stroke="none" />
+        <circle cx="6.7" cy="12" r=".8" fill="currentColor" stroke="none" />
+        <circle cx="6.7" cy="17" r=".8" fill="currentColor" stroke="none" />
+        <path d="M10 7h7m-7 5h7m-7 5h4m3 0 2 2-2 2" />
+      </g>
+    </symbol>
+    <symbol id="icon-layers" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m12 2 10 5-10 5L2 7Z" fill="currentColor" fill-opacity=".14" />
+        <path d="m2 12 10 5 10-5M2 17l10 5 10-5" />
+      </g>
+    </symbol>
+    <symbol id="icon-document" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 2h9l5 5v15H5Z" fill="currentColor" fill-opacity=".12" />
+        <path d="M14 2v5h5M8 11h8m-8 4h8m-8 4h5" />
+      </g>
+    </symbol>
+    <symbol id="icon-edit" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m4 16 12-12a2.8 2.8 0 0 1 4 4L8 20l-5 1Z" fill="currentColor" fill-opacity=".14" />
+        <path d="m14 6 4 4M4 16l4 4m4 1h9" />
+      </g>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9.5" fill="currentColor" fill-opacity=".14" />
+        <path d="m7 12 3.5 3.5L17 9" />
+      </g>
+    </symbol>
+    <symbol id="icon-bell" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 10a7 7 0 0 1 14 0v5l2 3H3l2-3Z" fill="currentColor" fill-opacity=".14" />
+        <path d="M9 21q3 2 6 0M12 1v2" />
+      </g>
+    </symbol>
+<clipPath id="clip-layer-1"><rect x="64" y="126" width="1552" height="152" rx="24" /></clipPath>
+<clipPath id="clip-layer-2"><rect x="64" y="296" width="1552" height="974" rx="28" /></clipPath>
+<clipPath id="clip-sub-a"><rect x="84" y="366" width="1512" height="274" rx="20" /></clipPath>
+<clipPath id="clip-sub-b"><rect x="84" y="656" width="1512" height="274" rx="20" /></clipPath>
+<clipPath id="clip-sub-c"><rect x="84" y="946" width="1512" height="304" rx="20" /></clipPath>
+<clipPath id="clip-layer-3"><rect x="64" y="1288" width="1552" height="280" rx="28" /></clipPath>
+<clipPath id="clip-layer-4"><rect x="64" y="1586" width="1552" height="246" rx="24" /></clipPath>
+</defs>
+<rect width="1680" height="1920" fill="url(#background)" id="diagram-background" stroke="none" />
+<g id="group-header">
+<text x="64" y="58" font-size="38" fill="#12306b" font-weight="700" text-anchor="start" id="text-title-001" data-content-id="text-title-001" data-region="region-header" stroke="none"><tspan x="64" y="58">SkillHub 管理平台 · 优化融合版系统架构</tspan></text>
+<text x="64" y="94" font-size="19" fill="#46618f" font-weight="400" text-anchor="start" id="text-subtitle-002" data-content-id="text-subtitle-002" data-region="region-header" stroke="none"><tspan x="64" y="94">企业级 AI Agent 技能资产统一管理与分发 · 8大核心能力域与分阶段演进深度融合</tspan></text>
+<rect x="1000" y="32" width="616" height="68" rx="16" fill="#ffffff" stroke="#cfe0fb" stroke-width="1.5" filter="url(#shadow)" id="legend-card-003" />
+<circle cx="1028" cy="66" r="10" fill="#0b8f86" stroke="none" id="leg-p1-c-004" />
+<text x="1046" y="72" font-size="16" fill="#1c2b4a" font-weight="700" id="text-leg-p1-005" data-content-id="text-leg-p1-005" data-region="region-legend" stroke="none"><tspan x="1046" y="72">阶段一: 最小可用底座(MVP)</tspan></text>
+<circle cx="1266" cy="66" r="10" fill="#f08a00" stroke="none" id="leg-p2-c-006" />
+<text x="1284" y="72" font-size="16" fill="#1c2b4a" font-weight="700" id="text-leg-p2-007" data-content-id="text-leg-p2-007" data-region="region-legend" stroke="none"><tspan x="1284" y="72">阶段二: 企业级治理</tspan></text>
+<circle cx="1456" cy="66" r="10" fill="#5149e8" stroke="none" id="leg-p3-c-008" />
+<text x="1474" y="72" font-size="16" fill="#1c2b4a" font-weight="700" id="text-leg-p3-009" data-content-id="text-leg-p3-009" data-region="region-legend" stroke="none"><tspan x="1474" y="72">阶段三: 规模化体验</tspan></text>
+</g>
+<g id="group-layer-1" data-group-id="group-layer-1">
+<rect x="64" y="126" width="1552" height="152" rx="24" fill="#ffffff" stroke="#8db8ff" stroke-width="1.5" filter="url(#shadow)" id="layer-1-container-010" data-paint-role="card" />
+<g clip-path="url(#clip-layer-1)"><rect x="64" y="126" width="1552" height="46" fill="url(#gradient-blue)" stroke="none" id="l1-band-011" data-paint-role="header" />
+<rect x="64" y="126" width="1552" height="46" fill="#12306b" fill-opacity="0.14" stroke="none" id="l1-mask-012" /></g>
+<text x="88" y="157" font-size="22" fill="#ffffff" font-weight="700" text-anchor="start" id="text-l1-title-013" data-content-id="text-l1-title-013" data-region="region-layer-1" stroke="none"><tspan x="88" y="157">01  多端接入与消费层（Client &amp; Runtime Gateway）</tspan></text>
+<rect x="84" y="184" width="368" height="80" rx="14" fill="#fafcff" stroke="#cfe0fb" stroke-width="1.5" filter="url(#shadow)" id="l1-c-0-014" data-paint-role="card" />
+<use href="#icon-web" x="100" y="200" width="36" height="36" color="#2468ee" id="l1-icon-0-015" />
+<text x="146" y="219" font-size="18" fill="#1c2b4a" font-weight="700" id="text-l1-c-title-0-016" data-content-id="text-l1-c-title-0-016" data-region="region-layer-1" stroke="none"><tspan x="146" y="219">Web 管理控制台</tspan></text>
+<text x="146" y="242" font-size="13" fill="#46618f" font-weight="400" id="text-l1-c-sub-0-017" data-content-id="text-l1-c-sub-0-017" data-region="region-layer-1" stroke="none"><tspan x="146" y="242">资产全景大盘 · 审批流 · 权限设置 · 审计追溯</tspan></text>
+<rect x="464" y="184" width="368" height="80" rx="14" fill="#fafcff" stroke="#cfe0fb" stroke-width="1.5" filter="url(#shadow)" id="l1-c-1-018" data-paint-role="card" />
+<use href="#icon-terminal" x="480" y="200" width="36" height="36" color="#5149e8" id="l1-icon-1-019" />
+<text x="526" y="219" font-size="18" fill="#1c2b4a" font-weight="700" id="text-l1-c-title-1-020" data-content-id="text-l1-c-title-1-020" data-region="region-layer-1" stroke="none"><tspan x="526" y="219">CLI 开发者工具 [阶段三]</tspan></text>
+<text x="526" y="242" font-size="13" fill="#46618f" font-weight="400" id="text-l1-c-sub-1-021" data-content-id="text-l1-c-sub-1-021" data-region="region-layer-1" stroke="none"><tspan x="526" y="242">本地开发打包 · 规范自检 · 一键提交发布</tspan></text>
+<rect x="844" y="184" width="368" height="80" rx="14" fill="#fafcff" stroke="#cfe0fb" stroke-width="1.5" filter="url(#shadow)" id="l1-c-2-022" data-paint-role="card" />
+<use href="#icon-edit" x="860" y="200" width="36" height="36" color="#5149e8" id="l1-icon-2-023" />
+<text x="906" y="219" font-size="18" fill="#1c2b4a" font-weight="700" id="text-l1-c-title-2-024" data-content-id="text-l1-c-title-2-024" data-region="region-layer-1" stroke="none"><tspan x="906" y="219">IDE 插件与扩展 [阶段三]</tspan></text>
+<text x="906" y="242" font-size="13" fill="#46618f" font-weight="400" id="text-l1-c-sub-2-025" data-content-id="text-l1-c-sub-2-025" data-region="region-layer-1" stroke="none"><tspan x="906" y="242">技能库极速检索 · 智能提示 · 本地测试调试</tspan></text>
+<rect x="1224" y="184" width="368" height="80" rx="14" fill="#fafcff" stroke="#cfe0fb" stroke-width="1.5" filter="url(#shadow)" id="l1-c-3-026" data-paint-role="card" />
+<use href="#icon-robot" x="1240" y="200" width="36" height="36" color="#0b8f86" id="l1-icon-3-027" />
+<text x="1286" y="219" font-size="18" fill="#1c2b4a" font-weight="700" id="text-l1-c-title-3-028" data-content-id="text-l1-c-title-3-028" data-region="region-layer-1" stroke="none"><tspan x="1286" y="219">Agent 编排与业务 Agent</tspan></text>
+<text x="1286" y="242" font-size="13" fill="#46618f" font-weight="400" id="text-l1-c-sub-3-029" data-content-id="text-l1-c-sub-3-029" data-region="region-layer-1" stroke="none"><tspan x="1286" y="242">标准化制品拉取接口 · 运行时动态加载技能包</tspan></text>
+</g>
+<g id="group-layer-2" data-group-id="group-layer-2">
+<rect x="64" y="296" width="1552" height="974" rx="28" fill="#ffffff" stroke="#8db8ff" stroke-width="1.5" filter="url(#shadow)" id="layer-2-container-030" data-paint-role="card" />
+<g clip-path="url(#clip-layer-2)"><rect x="64" y="296" width="1552" height="52" fill="url(#gradient-blue)" stroke="none" id="l2-band-031" data-paint-role="header" />
+<rect x="64" y="296" width="1552" height="52" fill="#12306b" fill-opacity="0.14" stroke="none" id="l2-mask-032" /></g>
+<text x="88" y="330" font-size="22" fill="#ffffff" font-weight="700" text-anchor="start" id="text-l2-title-033" data-content-id="text-l2-title-033" data-region="region-layer-2" stroke="none"><tspan x="88" y="330">02  核心业务能力域（8大能力域与三阶段演进矩阵 · 优化融合）</tspan></text>
+<g id="group-sub-a" data-group-id="group-sub-a">
+<rect x="84" y="366" width="1512" height="274" rx="20" fill="#fafcff" stroke="#8fe0d5" stroke-width="1.5" filter="url(#shadow)" id="sub-a-container-034" data-paint-role="card" />
+<g clip-path="url(#clip-sub-a)"><rect x="84" y="366" width="1512" height="46" fill="url(#gradient-teal)" stroke="none" id="sub-a-band-035" data-paint-role="header" />
+<rect x="84" y="366" width="1512" height="46" fill="#12306b" fill-opacity="0.12" stroke="none" id="sub-a-mask-036" /></g>
+<text x="108" y="396" font-size="20" fill="#ffffff" font-weight="700" text-anchor="start" id="text-sub-a-title-037" data-content-id="text-sub-a-title-037" data-region="region-sub-a" stroke="none"><tspan x="108" y="396">🟢 阶段一：资产入库与生命周期管理（MVP 核心底座 · 跑通端到端闭环 · 种子团队试用）</tspan></text>
+<rect x="104" y="426" width="472" height="198" rx="16" fill="#ffffff" stroke="#8fe0d5" stroke-width="1.5" filter="url(#shadow)" id="sub-a-card-0-038" data-paint-role="card" />
+<use href="#icon-package" x="120" y="440" width="32" height="32" color="#0b8f86" id="sub-a-icon-0-039" />
+<text x="160" y="462" font-size="19" fill="#1c2b4a" font-weight="700" id="text-sub-a-c-title-0-040" data-content-id="text-sub-a-c-title-0-040" data-region="region-sub-a" stroke="none"><tspan x="160" y="462">01 技能包摄取与元数据解析</tspan></text>
+<text x="122" y="494" font-size="14" fill="#0b8f86" font-weight="700" id="text-sub-a-c-desc-0-041" data-content-id="text-sub-a-c-desc-0-041" data-region="region-sub-a" stroke="none"><tspan x="122" y="494">零散技能标准化接收与规格解析</tspan></text>
+<line x1="122" y1="504" x2="558" y2="504" stroke="#cfe0fb" stroke-width="1" />
+<text x="122" y="528" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-a-item-0-0-042" data-content-id="text-sub-a-item-0-0-042" data-region="region-sub-a" stroke="none"><tspan x="122" y="528">• 统一规范：SKILL.md 元数据定义 + 附属资源结构</tspan></text>
+<text x="122" y="551" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-a-item-0-1-043" data-content-id="text-sub-a-item-0-1-043" data-region="region-sub-a" stroke="none"><tspan x="122" y="551">• 规范检查：包结构完整性、必填字段与合法性自检</tspan></text>
+<text x="122" y="574" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-a-item-0-2-044" data-content-id="text-sub-a-item-0-2-044" data-region="region-sub-a" stroke="none"><tspan x="122" y="574">• 自动解析：自动提取作者、版本、描述与能力标签</tspan></text>
+<text x="122" y="597" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-a-item-0-3-045" data-content-id="text-sub-a-item-0-3-045" data-region="region-sub-a" stroke="none"><tspan x="122" y="597">• 接入标准化：外部/研发提交技能无缝接收入库</tspan></text>
+<rect x="600" y="426" width="472" height="198" rx="16" fill="#ffffff" stroke="#8fe0d5" stroke-width="1.5" filter="url(#shadow)" id="sub-a-card-1-046" data-paint-role="card" />
+<use href="#icon-layers" x="616" y="440" width="32" height="32" color="#0b8f86" id="sub-a-icon-1-047" />
+<text x="656" y="462" font-size="19" fill="#1c2b4a" font-weight="700" id="text-sub-a-c-title-1-048" data-content-id="text-sub-a-c-title-1-048" data-region="region-sub-a" stroke="none"><tspan x="656" y="462">02 技能生命周期与版本管理</tspan></text>
+<text x="618" y="494" font-size="14" fill="#0b8f86" font-weight="700" id="text-sub-a-c-desc-1-049" data-content-id="text-sub-a-c-desc-1-049" data-region="region-sub-a" stroke="none"><tspan x="618" y="494">建立完整生命周期台账与快照</tspan></text>
+<line x1="618" y1="504" x2="1054" y2="504" stroke="#cfe0fb" stroke-width="1" />
+<text x="618" y="528" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-a-item-1-0-050" data-content-id="text-sub-a-item-1-0-050" data-region="region-sub-a" stroke="none"><tspan x="618" y="528">• 台账管理：新建、提交、版本发布、下线与归档</tspan></text>
+<text x="618" y="551" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-a-item-1-1-051" data-content-id="text-sub-a-item-1-1-051" data-region="region-sub-a" stroke="none"><tspan x="618" y="551">• 版本快照：基于版本树沉淀快照，追溯历史演进</tspan></text>
+<text x="618" y="574" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-a-item-1-2-052" data-content-id="text-sub-a-item-1-2-052" data-region="region-sub-a" stroke="none"><tspan x="618" y="574">• 版本回滚：支持基础版本快速回滚，保障运行稳定性</tspan></text>
+<text x="618" y="597" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-a-item-1-3-053" data-content-id="text-sub-a-item-1-3-053" data-region="region-sub-a" stroke="none"><tspan x="618" y="597">• 变更留痕：杜绝版本混乱，解决旧技能失控隐患</tspan></text>
+<rect x="1096" y="426" width="472" height="198" rx="16" fill="#ffffff" stroke="#8fe0d5" stroke-width="1.5" filter="url(#shadow)" id="sub-a-card-2-054" data-paint-role="card" />
+<use href="#icon-cloud" x="1112" y="440" width="32" height="32" color="#0b8f86" id="sub-a-icon-2-055" />
+<text x="1152" y="462" font-size="19" fill="#1c2b4a" font-weight="700" id="text-sub-a-c-title-2-056" data-content-id="text-sub-a-c-title-2-056" data-region="region-sub-a" stroke="none"><tspan x="1152" y="462">03 资产存储与分发服务</tspan></text>
+<text x="1114" y="494" font-size="14" fill="#0b8f86" font-weight="700" id="text-sub-a-c-desc-2-057" data-content-id="text-sub-a-c-desc-2-057" data-region="region-sub-a" stroke="none"><tspan x="1114" y="494">高可靠制品集中托管与分发拉取</tspan></text>
+<line x1="1114" y1="504" x2="1550" y2="504" stroke="#cfe0fb" stroke-width="1" />
+<text x="1114" y="528" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-a-item-2-0-058" data-content-id="text-sub-a-item-2-0-058" data-region="region-sub-a" stroke="none"><tspan x="1114" y="528">• 集中存储：技能 ZIP 制品集中持久化托管 (OSS)</tspan></text>
+<text x="1114" y="551" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-a-item-2-1-059" data-content-id="text-sub-a-item-2-1-059" data-region="region-sub-a" stroke="none"><tspan x="1114" y="551">• 标准拉取：对外提供标准化制品拉取与下载接口</tspan></text>
+<text x="1114" y="574" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-a-item-2-2-060" data-content-id="text-sub-a-item-2-2-060" data-region="region-sub-a" stroke="none"><tspan x="1114" y="574">• 统一分发：支撑上层 Agent 服务高效加载运行技能</tspan></text>
+<text x="1114" y="597" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-a-item-2-3-061" data-content-id="text-sub-a-item-2-3-061" data-region="region-sub-a" stroke="none"><tspan x="1114" y="597">• 收敛入口：消除各团队私存文件，确立权威制品源</tspan></text>
+</g>
+<g id="group-sub-b" data-group-id="group-sub-b">
+<rect x="84" y="656" width="1512" height="274" rx="20" fill="#fafcff" stroke="#ffd27a" stroke-width="1.5" filter="url(#shadow)" id="sub-b-container-062" data-paint-role="card" />
+<g clip-path="url(#clip-sub-b)"><rect x="84" y="656" width="1512" height="46" fill="url(#gradient-orange)" stroke="none" id="sub-b-band-063" data-paint-role="header" />
+<rect x="84" y="656" width="1512" height="46" fill="#12306b" fill-opacity="0.12" stroke="none" id="sub-b-mask-064" /></g>
+<text x="108" y="686" font-size="20" fill="#ffffff" font-weight="700" text-anchor="start" id="text-sub-b-title-065" data-content-id="text-sub-b-title-065" data-region="region-sub-b" stroke="none"><tspan x="108" y="686">🟡 阶段二：治理审核与安全风控（企业级治理 · 全公司开放 · 筑牢合规、权限与安全底线）</tspan></text>
+<rect x="104" y="716" width="472" height="198" rx="16" fill="#ffffff" stroke="#ffd27a" stroke-width="1.5" filter="url(#shadow)" id="sub-b-card-0-066" data-paint-role="card" />
+<use href="#icon-shield" x="120" y="730" width="32" height="32" color="#a2620a" id="sub-b-icon-0-067" />
+<text x="160" y="752" font-size="19" fill="#1c2b4a" font-weight="700" id="text-sub-b-c-title-0-068" data-content-id="text-sub-b-c-title-0-068" data-region="region-sub-b" stroke="none"><tspan x="160" y="752">05 访问权限与发布管理</tspan></text>
+<text x="122" y="784" font-size="14" fill="#a2620a" font-weight="700" id="text-sub-b-c-desc-0-069" data-content-id="text-sub-b-c-desc-0-069" data-region="region-sub-b" stroke="none"><tspan x="122" y="784">细粒度权限边界与规范发布流</tspan></text>
+<line x1="122" y1="794" x2="558" y2="794" stroke="#cfe0fb" stroke-width="1" />
+<text x="122" y="818" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-b-item-0-0-070" data-content-id="text-sub-b-item-0-0-070" data-region="region-sub-b" stroke="none"><tspan x="122" y="818">• 三级可见范围：私有、团队内部、全公司公开</tspan></text>
+<text x="122" y="841" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-b-item-0-1-071" data-content-id="text-sub-b-item-0-1-071" data-region="region-sub-b" stroke="none"><tspan x="122" y="841">• 细粒度授权：查看、下载、编辑、发布维度精细隔离</tspan></text>
+<text x="122" y="864" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-b-item-0-2-072" data-content-id="text-sub-b-item-0-2-072" data-region="region-sub-b" stroke="none"><tspan x="122" y="864">• 固化审批链路：提交 → 部门审核 → 正式发布上线</tspan></text>
+<text x="122" y="887" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-b-item-0-3-073" data-content-id="text-sub-b-item-0-3-073" data-region="region-sub-b" stroke="none"><tspan x="122" y="887">• 敏感防泄漏：未授权禁止拉取，保障核心技能资产合规</tspan></text>
+<rect x="600" y="716" width="472" height="198" rx="16" fill="#ffffff" stroke="#ffd27a" stroke-width="1.5" filter="url(#shadow)" id="sub-b-card-1-074" data-paint-role="card" />
+<use href="#icon-queue" x="616" y="730" width="32" height="32" color="#a2620a" id="sub-b-icon-1-075" />
+<text x="656" y="752" font-size="19" fill="#1c2b4a" font-weight="700" id="text-sub-b-c-title-1-076" data-content-id="text-sub-b-c-title-1-076" data-region="region-sub-b" stroke="none"><tspan x="656" y="752">06 独立安全流水线</tspan></text>
+<text x="618" y="784" font-size="14" fill="#a2620a" font-weight="700" id="text-sub-b-c-desc-1-077" data-content-id="text-sub-b-c-desc-1-077" data-region="region-sub-b" stroke="none"><tspan x="618" y="784">异步自动化风控与代码沙箱扫描</tspan></text>
+<line x1="618" y1="794" x2="1054" y2="794" stroke="#cfe0fb" stroke-width="1" />
+<text x="618" y="818" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-b-item-1-0-078" data-content-id="text-sub-b-item-1-0-078" data-region="region-sub-b" stroke="none"><tspan x="618" y="818">• 独立流水线：内置沙箱任务队列，解耦业务主流程</tspan></text>
+<text x="618" y="841" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-b-item-1-1-079" data-content-id="text-sub-b-item-1-1-079" data-region="region-sub-b" stroke="none"><tspan x="618" y="841">• 全方位扫描：脚本执行风险、三方依赖CVE、敏感凭证</tspan></text>
+<text x="618" y="864" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-b-item-1-2-080" data-content-id="text-sub-b-item-1-2-080" data-region="region-sub-b" stroke="none"><tspan x="618" y="864">• 风险分级管控：高危漏洞强制拦截发布，低风险复核</tspan></text>
+<text x="618" y="887" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-b-item-1-3-081" data-content-id="text-sub-b-item-1-3-081" data-region="region-sub-b" stroke="none"><tspan x="618" y="887">• 准入卡点：所有上架技能必须经安全扫描绿灯放行</tspan></text>
+<rect x="1096" y="716" width="472" height="198" rx="16" fill="#ffffff" stroke="#ffd27a" stroke-width="1.5" filter="url(#shadow)" id="sub-b-card-2-082" data-paint-role="card" />
+<use href="#icon-document" x="1112" y="730" width="32" height="32" color="#a2620a" id="sub-b-icon-2-083" />
+<text x="1152" y="752" font-size="19" fill="#1c2b4a" font-weight="700" id="text-sub-b-c-title-2-084" data-content-id="text-sub-b-c-title-2-084" data-region="region-sub-b" stroke="none"><tspan x="1152" y="752">全链路审计与用量分析</tspan></text>
+<text x="1114" y="784" font-size="14" fill="#a2620a" font-weight="700" id="text-sub-b-c-desc-2-085" data-content-id="text-sub-b-c-desc-2-085" data-region="region-sub-b" stroke="none"><tspan x="1114" y="784">合规操作追溯与基础调用计量</tspan></text>
+<line x1="1114" y1="794" x2="1550" y2="794" stroke="#cfe0fb" stroke-width="1" />
+<text x="1114" y="818" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-b-item-2-0-086" data-content-id="text-sub-b-item-2-0-086" data-region="region-sub-b" stroke="none"><tspan x="1114" y="818">• 全链路留痕：上传、下载、审核、调用均有可信记录</tspan></text>
+<text x="1114" y="841" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-b-item-2-1-087" data-content-id="text-sub-b-item-2-1-087" data-region="region-sub-b" stroke="none"><tspan x="1114" y="841">• 满足内审要求：操作日志不可篡改持久化存储</tspan></text>
+<text x="1114" y="864" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-b-item-2-2-088" data-content-id="text-sub-b-item-2-2-088" data-region="region-sub-b" stroke="none"><tspan x="1114" y="864">• 安全追溯分析：异常下载或越权操作实时预警定位</tspan></text>
+<text x="1114" y="887" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-b-item-2-3-089" data-content-id="text-sub-b-item-2-3-089" data-region="region-sub-b" stroke="none"><tspan x="1114" y="887">• 基础用量统计：记录各技能调用次数与消费趋势计数</tspan></text>
+</g>
+<g id="group-sub-c" data-group-id="group-sub-c">
+<rect x="84" y="946" width="1512" height="304" rx="20" fill="#fafcff" stroke="#b7bfff" stroke-width="1.5" filter="url(#shadow)" id="sub-c-container-090" data-paint-role="card" />
+<g clip-path="url(#clip-sub-c)"><rect x="84" y="946" width="1512" height="46" fill="url(#gradient-purple)" stroke="none" id="sub-c-band-091" data-paint-role="header" />
+<rect x="84" y="946" width="1512" height="46" fill="#12306b" fill-opacity="0.12" stroke="none" id="sub-c-mask-092" /></g>
+<text x="108" y="976" font-size="20" fill="#ffffff" font-weight="700" text-anchor="start" id="text-sub-c-title-093" data-content-id="text-sub-c-title-093" data-region="region-sub-c" stroke="none"><tspan x="108" y="976">🔵 阶段三：规模化体验与高阶交付（持续迭代优化 · 增值效能 · 支撑大规模沉淀运营）</tspan></text>
+<rect x="104" y="1006" width="472" height="228" rx="16" fill="#ffffff" stroke="#b7bfff" stroke-width="1.5" filter="url(#shadow)" id="sub-c-card-0-094" data-paint-role="card" />
+<use href="#icon-search" x="120" y="1020" width="32" height="32" color="#5149e8" id="sub-c-icon-0-095" />
+<text x="160" y="1042" font-size="19" fill="#1c2b4a" font-weight="700" id="text-sub-c-c-title-0-096" data-content-id="text-sub-c-c-title-0-096" data-region="region-sub-c" stroke="none"><tspan x="160" y="1042">04 检索发现与智能推荐</tspan></text>
+<text x="122" y="1074" font-size="14" fill="#5149e8" font-weight="700" id="text-sub-c-c-desc-0-097" data-content-id="text-sub-c-c-desc-0-097" data-region="region-sub-c" stroke="none"><tspan x="122" y="1074">多维精准搜索与语义向量引擎</tspan></text>
+<line x1="122" y1="1084" x2="558" y2="1084" stroke="#cfe0fb" stroke-width="1" />
+<text x="122" y="1108" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-c-item-0-0-098" data-content-id="text-sub-c-item-0-0-098" data-region="region-sub-c" stroke="none"><tspan x="122" y="1108">• 基础检索：按名称、多级标签过滤与精准匹配</tspan></text>
+<text x="122" y="1133" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-c-item-0-1-099" data-content-id="text-sub-c-item-0-1-099" data-region="region-sub-c" stroke="none"><tspan x="122" y="1133">• 高级检索：全文检索引擎 + 向量语义检索 (Embedding)</tspan></text>
+<text x="122" y="1158" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-c-item-0-2-100" data-content-id="text-sub-c-item-0-2-100" data-region="region-sub-c" stroke="none"><tspan x="122" y="1158">• 权限过滤：检索结果按用户可见范围动态脱敏与过滤</tspan></text>
+<text x="122" y="1183" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-c-item-0-3-101" data-content-id="text-sub-c-item-0-3-101" data-region="region-sub-c" stroke="none"><tspan x="122" y="1183">• 智能推荐：相似技能推荐、热度排行与评分评价体系</tspan></text>
+<rect x="600" y="1006" width="472" height="228" rx="16" fill="#ffffff" stroke="#b7bfff" stroke-width="1.5" filter="url(#shadow)" id="sub-c-card-1-102" data-paint-role="card" />
+<use href="#icon-puzzle" x="616" y="1020" width="32" height="32" color="#5149e8" id="sub-c-icon-1-103" />
+<text x="656" y="1042" font-size="19" fill="#1c2b4a" font-weight="700" id="text-sub-c-c-title-1-104" data-content-id="text-sub-c-c-title-1-104" data-region="region-sub-c" stroke="none"><tspan x="656" y="1042">07 技能套件管理 (Skill Suite)</tspan></text>
+<text x="618" y="1074" font-size="14" fill="#5149e8" font-weight="700" id="text-sub-c-c-desc-1-105" data-content-id="text-sub-c-c-desc-1-105" data-region="region-sub-c" stroke="none"><tspan x="618" y="1074">复杂场景组合编排与依赖管理</tspan></text>
+<line x1="618" y1="1084" x2="1054" y2="1084" stroke="#cfe0fb" stroke-width="1" />
+<text x="618" y="1108" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-c-item-1-0-106" data-content-id="text-sub-c-item-1-0-106" data-region="region-sub-c" stroke="none"><tspan x="618" y="1108">• 套件编排：多独立技能组合封装为垂直业务套件模板</tspan></text>
+<text x="618" y="1133" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-c-item-1-1-107" data-content-id="text-sub-c-item-1-1-107" data-region="region-sub-c" stroke="none"><tspan x="618" y="1133">• 版本锁定：套件内各技能固定依赖版本，防破坏变更</tspan></text>
+<text x="618" y="1158" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-c-item-1-2-108" data-content-id="text-sub-c-item-1-2-108" data-region="region-sub-c" stroke="none"><tspan x="618" y="1158">• 一键安装：一键批量安装套件，免去分散配置痛苦</tspan></text>
+<text x="618" y="1183" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-c-item-1-3-109" data-content-id="text-sub-c-item-1-3-109" data-region="region-sub-c" stroke="none"><tspan x="618" y="1183">• 复用升级：统一更新套件版本，降低多技能协同运维成本</tspan></text>
+<rect x="1096" y="1006" width="472" height="228" rx="16" fill="#ffffff" stroke="#b7bfff" stroke-width="1.5" filter="url(#shadow)" id="sub-c-card-2-110" data-paint-role="card" />
+<use href="#icon-check" x="1112" y="1020" width="32" height="32" color="#5149e8" id="sub-c-icon-2-111" />
+<text x="1152" y="1042" font-size="19" fill="#1c2b4a" font-weight="700" id="text-sub-c-c-title-2-112" data-content-id="text-sub-c-c-title-2-112" data-region="region-sub-c" stroke="none"><tspan x="1152" y="1042">08 客户端适配与批量运维</tspan></text>
+<text x="1114" y="1074" font-size="14" fill="#5149e8" font-weight="700" id="text-sub-c-c-desc-2-113" data-content-id="text-sub-c-c-desc-2-113" data-region="region-sub-c" stroke="none"><tspan x="1114" y="1074">精细发布控制与运营大盘可视化</tspan></text>
+<line x1="1114" y1="1084" x2="1550" y2="1084" stroke="#cfe0fb" stroke-width="1" />
+<text x="1114" y="1108" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-c-item-2-0-114" data-content-id="text-sub-c-item-2-0-114" data-region="region-sub-c" stroke="none"><tspan x="1114" y="1108">• 多端交付：CLI、网页端、IDE 插件与 Agent 深度集成</tspan></text>
+<text x="1114" y="1133" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-c-item-2-1-115" data-content-id="text-sub-c-item-2-1-115" data-region="region-sub-c" stroke="none"><tspan x="1114" y="1133">• 高级发布策略：灰度发布、版本流量分流、A/B切换</tspan></text>
+<text x="1114" y="1158" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-c-item-2-2-116" data-content-id="text-sub-c-item-2-2-116" data-region="region-sub-c" stroke="none"><tspan x="1114" y="1158">• 资产运营看板：资产全景大盘、热度趋势与质量分析</tspan></text>
+<text x="1114" y="1183" font-size="13" fill="#1c2b4a" font-weight="400" id="text-sub-c-item-2-3-117" data-content-id="text-sub-c-item-2-3-117" data-region="region-sub-c" stroke="none"><tspan x="1114" y="1183">• 批量运维工具：批量导入、跨环境迁移、失效预警</tspan></text>
+</g>
+</g>
+<g id="group-layer-3" data-group-id="group-layer-3">
+<rect x="64" y="1288" width="1552" height="280" rx="28" fill="#ffffff" stroke="#cfe0fb" stroke-width="1.5" filter="url(#shadow)" id="layer-3-container-118" data-paint-role="card" />
+<g clip-path="url(#clip-layer-3)"><rect x="64" y="1288" width="1552" height="48" fill="url(#gradient-infra)" stroke="none" id="l3-band-119" data-paint-role="header" />
+<rect x="64" y="1288" width="1552" height="48" fill="#12306b" fill-opacity="0.06" stroke="none" id="l3-mask-120" /></g>
+<text x="88" y="1320" font-size="22" fill="#12306b" font-weight="700" text-anchor="start" id="text-l3-title-121" data-content-id="text-l3-title-121" data-region="region-layer-3" stroke="none"><tspan x="88" y="1320">03  数据支撑与基础设施层（底层复用公司现有中间件，不重复建设基础设施）</tspan></text>
+<rect x="84" y="1348" width="368" height="144" rx="14" fill="#fafcff" stroke="#cfe0fb" stroke-width="1.5" filter="url(#shadow)" id="l3-card-0-122" data-paint-role="card" />
+<use href="#icon-database" x="100" y="1362" width="32" height="32" color="#2468ee" id="l3-icon-0-123" />
+<text x="140" y="1382" font-size="16" fill="#1c2b4a" font-weight="700" id="text-l3-c-title-0-124" data-content-id="text-l3-c-title-0-124" data-region="region-layer-3" stroke="none"><tspan x="140" y="1382">关系型数据库 (PostgreSQL)</tspan></text>
+<text x="140" y="1402" font-size="12" fill="#46618f" font-weight="400" id="text-l3-c-sub-0-125" data-content-id="text-l3-c-sub-0-125" data-region="region-layer-3" stroke="none"><tspan x="140" y="1402">结构化核心数据与状态存储</tspan></text>
+<text x="100" y="1424" font-size="12" fill="#26406e" font-weight="400" id="text-l3-c-line-0-0-126" data-content-id="text-l3-c-line-0-0-126" data-region="region-layer-3" stroke="none"><tspan x="100" y="1424">• 技能元数据、版本树快照与多版本台账</tspan></text>
+<text x="100" y="1445" font-size="12" fill="#26406e" font-weight="400" id="text-l3-c-line-0-1-127" data-content-id="text-l3-c-line-0-1-127" data-region="region-layer-3" stroke="none"><tspan x="100" y="1445">• 组织目录、权限配置与审批工单状态</tspan></text>
+<text x="100" y="1466" font-size="12" fill="#26406e" font-weight="400" id="text-l3-c-line-0-2-128" data-content-id="text-l3-c-line-0-2-128" data-region="region-layer-3" stroke="none"><tspan x="100" y="1466">• 全链路审计操作日志不可篡改持久化</tspan></text>
+<rect x="464" y="1348" width="368" height="144" rx="14" fill="#fafcff" stroke="#cfe0fb" stroke-width="1.5" filter="url(#shadow)" id="l3-card-1-129" data-paint-role="card" />
+<use href="#icon-cloud" x="480" y="1362" width="32" height="32" color="#0b8f86" id="l3-icon-1-130" />
+<text x="520" y="1382" font-size="16" fill="#1c2b4a" font-weight="700" id="text-l3-c-title-1-131" data-content-id="text-l3-c-title-1-131" data-region="region-layer-3" stroke="none"><tspan x="520" y="1382">对象存储服务 (OSS)</tspan></text>
+<text x="520" y="1402" font-size="12" fill="#46618f" font-weight="400" id="text-l3-c-sub-1-132" data-content-id="text-l3-c-sub-1-132" data-region="region-layer-3" stroke="none"><tspan x="520" y="1402">二进制技能制品集中存储</tspan></text>
+<text x="480" y="1424" font-size="12" fill="#26406e" font-weight="400" id="text-l3-c-line-1-0-133" data-content-id="text-l3-c-line-1-0-133" data-region="region-layer-3" stroke="none"><tspan x="480" y="1424">• 技能 ZIP 制品集中持久化托管</tspan></text>
+<text x="480" y="1445" font-size="12" fill="#26406e" font-weight="400" id="text-l3-c-line-1-1-134" data-content-id="text-l3-c-line-1-1-134" data-region="region-layer-3" stroke="none"><tspan x="480" y="1445">• 制品强哈希 (SHA256) 校验与防篡改</tspan></text>
+<text x="480" y="1466" font-size="12" fill="#26406e" font-weight="400" id="text-l3-c-line-1-2-135" data-content-id="text-l3-c-line-1-2-135" data-region="region-layer-3" stroke="none"><tspan x="480" y="1466">• 支持高并发分发下载与快速拉取</tspan></text>
+<rect x="844" y="1348" width="368" height="144" rx="14" fill="#fafcff" stroke="#cfe0fb" stroke-width="1.5" filter="url(#shadow)" id="l3-card-2-136" data-paint-role="card" />
+<use href="#icon-search" x="860" y="1362" width="32" height="32" color="#5149e8" id="l3-icon-2-137" />
+<text x="900" y="1382" font-size="16" fill="#1c2b4a" font-weight="700" id="text-l3-c-title-2-138" data-content-id="text-l3-c-title-2-138" data-region="region-layer-3" stroke="none"><tspan x="900" y="1382">向量数据库与检索引擎</tspan></text>
+<text x="900" y="1402" font-size="12" fill="#46618f" font-weight="400" id="text-l3-c-sub-2-139" data-content-id="text-l3-c-sub-2-139" data-region="region-layer-3" stroke="none"><tspan x="900" y="1402">高级语义搜索与高效检索</tspan></text>
+<text x="860" y="1424" font-size="12" fill="#26406e" font-weight="400" id="text-l3-c-line-2-0-140" data-content-id="text-l3-c-line-2-0-140" data-region="region-layer-3" stroke="none"><tspan x="860" y="1424">• 向量索引引擎支撑自然语言语义检索</tspan></text>
+<text x="860" y="1445" font-size="12" fill="#26406e" font-weight="400" id="text-l3-c-line-2-1-141" data-content-id="text-l3-c-line-2-1-141" data-region="region-layer-3" stroke="none"><tspan x="860" y="1445">• 基于技能功能 Embedding 进行相似推荐</tspan></text>
+<text x="860" y="1466" font-size="12" fill="#26406e" font-weight="400" id="text-l3-c-line-2-2-142" data-content-id="text-l3-c-line-2-2-142" data-region="region-layer-3" stroke="none"><tspan x="860" y="1466">• 标签倒排索引加速千万级多维过滤</tspan></text>
+<rect x="1224" y="1348" width="368" height="144" rx="14" fill="#fafcff" stroke="#cfe0fb" stroke-width="1.5" filter="url(#shadow)" id="l3-card-3-143" data-paint-role="card" />
+<use href="#icon-queue" x="1240" y="1362" width="32" height="32" color="#a2620a" id="l3-icon-3-144" />
+<text x="1280" y="1382" font-size="16" fill="#1c2b4a" font-weight="700" id="text-l3-c-title-3-145" data-content-id="text-l3-c-title-3-145" data-region="region-layer-3" stroke="none"><tspan x="1280" y="1382">安全扫描沙箱与流水线</tspan></text>
+<text x="1280" y="1402" font-size="12" fill="#46618f" font-weight="400" id="text-l3-c-sub-3-146" data-content-id="text-l3-c-sub-3-146" data-region="region-layer-3" stroke="none"><tspan x="1280" y="1402">隔离检测与异步流水线集群</tspan></text>
+<text x="1240" y="1424" font-size="12" fill="#26406e" font-weight="400" id="text-l3-c-line-3-0-147" data-content-id="text-l3-c-line-3-0-147" data-region="region-layer-3" stroke="none"><tspan x="1240" y="1424">• 异步任务队列 Worker 调度解耦</tspan></text>
+<text x="1240" y="1445" font-size="12" fill="#26406e" font-weight="400" id="text-l3-c-line-3-1-148" data-content-id="text-l3-c-line-3-1-148" data-region="region-layer-3" stroke="none"><tspan x="1240" y="1445">• 隔离沙箱环境执行脚本与静态分析</tspan></text>
+<text x="1240" y="1466" font-size="12" fill="#26406e" font-weight="400" id="text-l3-c-line-3-2-149" data-content-id="text-l3-c-line-3-2-149" data-region="region-layer-3" stroke="none"><tspan x="1240" y="1466">• 依赖组件漏洞与敏感信息自动侦测</tspan></text>
+<rect x="84" y="1504" width="1512" height="50" rx="12" fill="#e8eef8" stroke="#cfe0fb" stroke-width="1.5" id="infra-ribbon-150" />
+<use href="#icon-layers" x="104" y="1513" width="30" height="30" color="#2468ee" id="ribbon-icon-151" />
+<text x="146" y="1536" font-size="15" fill="#12306b" font-weight="700" id="text-ribbon-152" data-content-id="text-ribbon-152" data-region="region-layer-3" stroke="none"><tspan x="146" y="1536">企业现有通用基础设施能力复用：统一身份认证中心 (SSO / IAM) · API 统一网关 · 监控告警系统 · 集中日志分析平台</tspan></text>
+</g>
+<g id="group-layer-4" data-group-id="group-layer-4">
+<rect x="64" y="1586" width="1552" height="246" rx="24" fill="#ffffff" stroke="#8db8ff" stroke-width="1.5" filter="url(#shadow)" id="layer-4-container-153" data-paint-role="card" />
+<g clip-path="url(#clip-layer-4)"><rect x="64" y="1586" width="1552" height="46" fill="url(#gradient-blue)" stroke="none" id="l4-band-154" data-paint-role="header" />
+<rect x="64" y="1586" width="1552" height="46" fill="#12306b" fill-opacity="0.12" stroke="none" id="l4-mask-155" /></g>
+<text x="88" y="1617" font-size="22" fill="#ffffff" font-weight="700" text-anchor="start" id="text-l4-title-156" data-content-id="text-l4-title-156" data-region="region-layer-4" stroke="none"><tspan x="88" y="1617">04  技能资产端到端生命周期流转闭环（主业务工作流）</tspan></text>
+<rect x="84" y="1646" width="228" height="166" rx="14" fill="#fafcff" stroke="#cfe0fb" stroke-width="1.5" filter="url(#shadow)" id="flow-card-0-157" data-paint-role="card" />
+<rect x="96" y="1658" width="204" height="24" rx="6" fill="#5149e8" fill-opacity="0.12" stroke="none" id="flow-badge-0-158" />
+<text x="198" y="1675" font-size="12" fill="#5149e8" font-weight="700" text-anchor="middle" id="text-flow-badge-0-159" data-content-id="text-flow-badge-0-159" data-region="region-layer-4" stroke="none"><tspan x="198" y="1675">STEP 1 · 阶段三 🔵</tspan></text>
+<text x="198" y="1708" font-size="16" fill="#1c2b4a" font-weight="700" text-anchor="middle" id="text-flow-title-0-160" data-content-id="text-flow-title-0-160" data-region="region-layer-4" stroke="none"><tspan x="198" y="1708">本地打包与校验</tspan></text>
+<text x="198" y="1730" font-size="13" fill="#46618f" font-weight="700" text-anchor="middle" id="text-flow-sub-0-161" data-content-id="text-flow-sub-0-161" data-region="region-layer-4" stroke="none"><tspan x="198" y="1730">CLI/本地规范自检</tspan></text>
+<line x1="100" y1="1740" x2="296" y2="1740" stroke="#cfe0fb" stroke-width="1" />
+<text x="96" y="1760" font-size="11" fill="#26406e" font-weight="400" id="text-flow-detail-0-162" data-content-id="text-flow-detail-0-162" data-region="region-layer-4" stroke="none">
+<tspan x="96" y="1760">开发者本地编写技能包，使用 CLI 验证</tspan>
+<tspan x="96" y="1778"> SKILL.md 规范并一键打包提交</tspan>
+</text>
+<line x1="315" y1="1729" x2="335" y2="1729" stroke="#2468ee" stroke-width="2.5" marker-end="url(#arrow-blue)" id="flow-arrow-0-163" />
+<rect x="340" y="1646" width="228" height="166" rx="14" fill="#fafcff" stroke="#cfe0fb" stroke-width="1.5" filter="url(#shadow)" id="flow-card-1-164" data-paint-role="card" />
+<rect x="352" y="1658" width="204" height="24" rx="6" fill="#0b8f86" fill-opacity="0.12" stroke="none" id="flow-badge-1-165" />
+<text x="454" y="1675" font-size="12" fill="#0b8f86" font-weight="700" text-anchor="middle" id="text-flow-badge-1-166" data-content-id="text-flow-badge-1-166" data-region="region-layer-4" stroke="none"><tspan x="454" y="1675">STEP 2 · 阶段一 🟢</tspan></text>
+<text x="454" y="1708" font-size="16" fill="#1c2b4a" font-weight="700" text-anchor="middle" id="text-flow-title-1-167" data-content-id="text-flow-title-1-167" data-region="region-layer-4" stroke="none"><tspan x="454" y="1708">资产入库与解析</tspan></text>
+<text x="454" y="1730" font-size="13" fill="#46618f" font-weight="700" text-anchor="middle" id="text-flow-sub-1-168" data-content-id="text-flow-sub-1-168" data-region="region-layer-4" stroke="none"><tspan x="454" y="1730">摄取校验与存储</tspan></text>
+<line x1="356" y1="1740" x2="552" y2="1740" stroke="#cfe0fb" stroke-width="1" />
+<text x="352" y="1760" font-size="11" fill="#26406e" font-weight="400" id="text-flow-detail-1-169" data-content-id="text-flow-detail-1-169" data-region="region-layer-4" stroke="none">
+<tspan x="352" y="1760">平台统一接收 ZIP 制品，自动提取元</tspan>
+<tspan x="352" y="1778">数据写入 PG，制品持久化至 OSS</tspan>
+</text>
+<line x1="571" y1="1729" x2="591" y2="1729" stroke="#2468ee" stroke-width="2.5" marker-end="url(#arrow-blue)" id="flow-arrow-1-170" />
+<rect x="596" y="1646" width="228" height="166" rx="14" fill="#fafcff" stroke="#cfe0fb" stroke-width="1.5" filter="url(#shadow)" id="flow-card-2-171" data-paint-role="card" />
+<rect x="608" y="1658" width="204" height="24" rx="6" fill="#f08a00" fill-opacity="0.12" stroke="none" id="flow-badge-2-172" />
+<text x="710" y="1675" font-size="12" fill="#f08a00" font-weight="700" text-anchor="middle" id="text-flow-badge-2-173" data-content-id="text-flow-badge-2-173" data-region="region-layer-4" stroke="none"><tspan x="710" y="1675">STEP 3 · 阶段二 🟡</tspan></text>
+<text x="710" y="1708" font-size="16" fill="#1c2b4a" font-weight="700" text-anchor="middle" id="text-flow-title-2-174" data-content-id="text-flow-title-2-174" data-region="region-layer-4" stroke="none"><tspan x="710" y="1708">异步安全检测</tspan></text>
+<text x="710" y="1730" font-size="13" fill="#46618f" font-weight="700" text-anchor="middle" id="text-flow-sub-2-175" data-content-id="text-flow-sub-2-175" data-region="region-layer-4" stroke="none"><tspan x="710" y="1730">沙箱流水线扫描</tspan></text>
+<line x1="612" y1="1740" x2="808" y2="1740" stroke="#cfe0fb" stroke-width="1" />
+<text x="608" y="1760" font-size="11" fill="#26406e" font-weight="400" id="text-flow-detail-2-176" data-content-id="text-flow-detail-2-176" data-region="region-layer-4" stroke="none">
+<tspan x="608" y="1760">触发独立安全流水线，深度扫描代码</tspan>
+<tspan x="608" y="1778">执行、组件漏洞与敏感凭证并分级</tspan>
+</text>
+<line x1="827" y1="1729" x2="847" y2="1729" stroke="#2468ee" stroke-width="2.5" marker-end="url(#arrow-blue)" id="flow-arrow-2-177" />
+<rect x="852" y="1646" width="228" height="166" rx="14" fill="#fafcff" stroke="#cfe0fb" stroke-width="1.5" filter="url(#shadow)" id="flow-card-3-178" data-paint-role="card" />
+<rect x="864" y="1658" width="204" height="24" rx="6" fill="#f08a00" fill-opacity="0.12" stroke="none" id="flow-badge-3-179" />
+<text x="966" y="1675" font-size="12" fill="#f08a00" font-weight="700" text-anchor="middle" id="text-flow-badge-3-180" data-content-id="text-flow-badge-3-180" data-region="region-layer-4" stroke="none"><tspan x="966" y="1675">STEP 4 · 阶段二 🟡</tspan></text>
+<text x="966" y="1708" font-size="16" fill="#1c2b4a" font-weight="700" text-anchor="middle" id="text-flow-title-3-181" data-content-id="text-flow-title-3-181" data-region="region-layer-4" stroke="none"><tspan x="966" y="1708">权限审核与发布</tspan></text>
+<text x="966" y="1730" font-size="13" fill="#46618f" font-weight="700" text-anchor="middle" id="text-flow-sub-3-182" data-content-id="text-flow-sub-3-182" data-region="region-layer-4" stroke="none"><tspan x="966" y="1730">合规流程与发布</tspan></text>
+<line x1="868" y1="1740" x2="1064" y2="1740" stroke="#cfe0fb" stroke-width="1" />
+<text x="864" y="1760" font-size="11" fill="#26406e" font-weight="400" id="text-flow-detail-3-183" data-content-id="text-flow-detail-3-183" data-region="region-layer-4" stroke="none">
+<tspan x="864" y="1760">高危拦截，低风险走审批流，按私有</tspan>
+<tspan x="864" y="1778">/团队/公开可见范围正式发布上线</tspan>
+</text>
+<line x1="1083" y1="1729" x2="1103" y2="1729" stroke="#2468ee" stroke-width="2.5" marker-end="url(#arrow-blue)" id="flow-arrow-3-184" />
+<rect x="1108" y="1646" width="228" height="166" rx="14" fill="#fafcff" stroke="#cfe0fb" stroke-width="1.5" filter="url(#shadow)" id="flow-card-4-185" data-paint-role="card" />
+<rect x="1120" y="1658" width="204" height="24" rx="6" fill="#5149e8" fill-opacity="0.12" stroke="none" id="flow-badge-4-186" />
+<text x="1222" y="1675" font-size="12" fill="#5149e8" font-weight="700" text-anchor="middle" id="text-flow-badge-4-187" data-content-id="text-flow-badge-4-187" data-region="region-layer-4" stroke="none"><tspan x="1222" y="1675">STEP 5 · 阶段三 🔵</tspan></text>
+<text x="1222" y="1708" font-size="16" fill="#1c2b4a" font-weight="700" text-anchor="middle" id="text-flow-title-4-188" data-content-id="text-flow-title-4-188" data-region="region-layer-4" stroke="none"><tspan x="1222" y="1708">检索与套件组合</tspan></text>
+<text x="1222" y="1730" font-size="13" fill="#46618f" font-weight="700" text-anchor="middle" id="text-flow-sub-4-189" data-content-id="text-flow-sub-4-189" data-region="region-layer-4" stroke="none"><tspan x="1222" y="1730">语义搜索与编排</tspan></text>
+<line x1="1124" y1="1740" x2="1320" y2="1740" stroke="#cfe0fb" stroke-width="1" />
+<text x="1120" y="1760" font-size="11" fill="#26406e" font-weight="400" id="text-flow-detail-4-190" data-content-id="text-flow-detail-4-190" data-region="region-layer-4" stroke="none">
+<tspan x="1120" y="1760">用户通过标签/向量语义高效检索，</tspan>
+<tspan x="1120" y="1778">将多个独立技能组合封装为业务套件</tspan>
+</text>
+<line x1="1339" y1="1729" x2="1359" y2="1729" stroke="#2468ee" stroke-width="2.5" marker-end="url(#arrow-blue)" id="flow-arrow-4-191" />
+<rect x="1364" y="1646" width="228" height="166" rx="14" fill="#fafcff" stroke="#cfe0fb" stroke-width="1.5" filter="url(#shadow)" id="flow-card-5-192" data-paint-role="card" />
+<rect x="1376" y="1658" width="204" height="24" rx="6" fill="#0b8f86" fill-opacity="0.12" stroke="none" id="flow-badge-5-193" />
+<text x="1478" y="1675" font-size="12" fill="#0b8f86" font-weight="700" text-anchor="middle" id="text-flow-badge-5-194" data-content-id="text-flow-badge-5-194" data-region="region-layer-4" stroke="none"><tspan x="1478" y="1675">STEP 6 · 阶段一 🟢</tspan></text>
+<text x="1478" y="1708" font-size="16" fill="#1c2b4a" font-weight="700" text-anchor="middle" id="text-flow-title-5-195" data-content-id="text-flow-title-5-195" data-region="region-layer-4" stroke="none"><tspan x="1478" y="1708">Agent消费与运营</tspan></text>
+<text x="1478" y="1730" font-size="13" fill="#46618f" font-weight="700" text-anchor="middle" id="text-flow-sub-5-196" data-content-id="text-flow-sub-5-196" data-region="region-layer-4" stroke="none"><tspan x="1478" y="1730">运行时加载与度量</tspan></text>
+<line x1="1380" y1="1740" x2="1576" y2="1740" stroke="#cfe0fb" stroke-width="1" />
+<text x="1376" y="1760" font-size="11" fill="#26406e" font-weight="400" id="text-flow-detail-5-197" data-content-id="text-flow-detail-5-197" data-region="region-layer-4" stroke="none">
+<tspan x="1376" y="1760">业务 Agent 统一接口拉取加载技能</tspan>
+<tspan x="1376" y="1778">，全链路操作留痕，统计调用用量与热度</tspan>
+</text>
+</g>
+<text x="64" y="1862" font-size="14" fill="#7f8fab" font-weight="400" text-anchor="start" id="text-footer-198" data-content-id="text-footer-198" data-region="region-footer" stroke="none"><tspan x="64" y="1862">SkillHub 平台架构体系 · 优化融合版 · 严格遵循规范预设色板与分层嵌套拓扑设计 · 矢量可编辑交付</tspan></text>
+</svg>

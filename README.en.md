@@ -465,6 +465,16 @@ Colors come only from the allowlisted `palette.json`, never inferred from busine
 - A quick throwaway sketch without an outline confirmation
 - Environments with no verified renderer where full render sign-off is required
 
+**Output sample**
+
+<p align="center">
+  <a href="./image/skillhub-架构图.svg">
+    <img src="./image/skillhub-架构图.svg" width="480" alt="SkillHub platform system architecture — an editable SVG produced by editable-diagram-svg">
+  </a>
+</p>
+
+*A more complex sample: "SkillHub Management Platform — Optimized Integrated System Architecture". The source is 1680×1920; only the width is set here, so the height scales proportionally to 480px (about 28% of the original). [Open the full-size SVG](./image/skillhub-架构图.svg). It shows how the skill handles multiple groups, nested layers, and dense connections: palette-consistent group headers, white rounded cards, arrowed connectors and a legend, with all text still editable `text/tspan`.*
+
 → [SKILL.md](./editable-diagram-svg/SKILL.md) · [Full directory](https://github.com/YunMeng6364/requirement-clarifier/tree/main/editable-diagram-svg) · [Color spec](./editable-diagram-svg/references/color-spec.md) · [Verification guide](./editable-diagram-svg/references/verification.md)
 
 ---

@@ -467,6 +467,16 @@ ponytail，用最简单但完整的方案实现这个功能，优先复用已有
 - 只想快速要一张示意图，不想先确认提纲
 - 当前环境没有任何可用渲染器，却要求完成渲染验收
 
+**产出示例**
+
+<p align="center">
+  <a href="./image/skillhub-架构图.svg">
+    <img src="./image/skillhub-架构图.svg" width="480" alt="SkillHub 管理平台系统架构 —— editable-diagram-svg 生成的可编辑 SVG">
+  </a>
+</p>
+
+*一张更复杂的产出示例：「SkillHub 管理平台 · 优化融合版系统架构」。原图 1680×1920，这里只指定宽度、高度按原比例自适应缩到 480px（约原尺寸的 28%），[点击查看完整尺寸](./image/skillhub-架构图.svg)。可以看到它处理多分组、多层嵌套与密集连线时的样子：统一色板的分组标题栏、白色圆角卡片、带箭头的连线与图例，文字仍是可编辑的 `text/tspan`。*
+
 → [SKILL.md](./editable-diagram-svg/SKILL.md) · [完整目录](https://github.com/YunMeng6364/requirement-clarifier/tree/main/editable-diagram-svg) · [允许色板](./editable-diagram-svg/references/color-spec.md) · [校验说明](./editable-diagram-svg/references/verification.md)
 
 ---
